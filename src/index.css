@@ -105,10 +105,67 @@ main {
   margin-top: -128px;
 }
 
+main button {
+  box-sizing: border-box;
+  width: 145px;
+  height: 50px;
+  background: rgba(34, 34, 34, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+main .green-color-title {
+  color: #72BF44;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+main .contents {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  height: 100%;
+}
+
+main .contents .box-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+main .contents .box-wrap > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 40px;
+  width: 608px;
+  height: 500px;
+}
+
+main .contents div p + p {
+  margin-top: 24px;
+}
+
+main .contents .title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+main .contents > div + div {
+  margin-top: 60px;
+}
+
 main .top-wrap {
   display: flex;
   justify-content: center;
-  background-image: url("./images/main_01.jpg");
+  background-image: url("./images/main01.png");
   background-size: cover;
   height: 980px;
 }
@@ -130,17 +187,6 @@ main .top-wrap .main-text-wrap .title {
   font-size: 40px;
 }
 
-main .top-wrap .main-text-wrap button {
-  box-sizing: border-box;
-  width: 145px;
-  height: 50px;
-  background: rgba(34, 34, 34, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 16px;
-  color: #FFFFFF;
-  font-size: 16px;
-}
-
 main .top-wrap .main-text-wrap .title + p {
   margin-top: 30px;
 }
@@ -151,4 +197,83 @@ main .top-wrap .main-text-wrap p + p {
 
 main .top-wrap .main-text-wrap p + button {
   margin-top: 60px;
+}
+
+main .about-wrap {
+  background: #FFF9EF;
+  height: 864px;
+}
+
+main .about-wrap .blueberry-wrap {
+  background-image: url("./images/blueberry.png");
+  background-size: cover;
+}
+
+main .about-wrap .caring-wrap {
+  background-image: url("./images/caring.png");
+  background-size: cover;
+}
+
+main .product-wrap {
+  display: flex;
+  height: 750px;
+}
+
+main .product-wrap .left-wrap {
+  width: 40%;
+  min-width: 600px;
+  height: 100%;
+  background-image: url("./images/mainProduct.png");
+  background-size: cover;
+  padding-right: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+main .product-wrap .left-wrap .text-wrap {
+  height: 246px;
+  border-radius: 0px 24px 24px 0px;
+  background: rgba(255, 255, 255, 0.85);
+  margin-bottom: 70px;
+}
+
+main .product-wrap .left-wrap .text-wrap > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 calc(100% - 570px);
+}
+
+main .product-wrap .left-wrap .text-wrap .title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+main .product-wrap .left-wrap .text-wrap .green-color-title + .title {
+  margin-top: 10px;
+}
+
+main .product-wrap .left-wrap .text-wrap .title + p {
+  margin-top: 16px;
+}
+
+main .product-wrap .left-wrap .text-wrap p:last-child {
+  margin-top: 5px;
+}
+
+main .product-wrap .right-wrap {
+  width: 60%;
+}
+
+main .product-wrap .right-wrap .green-color-title {
+  color: #6F8F5B;
+  font-size: 16px;
+}
+
+main .product-wrap .right-wrap svg {
+  width: 236px;
+  height: 14px;
+  flex-shrink: 0;
 }
