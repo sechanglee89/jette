@@ -221,7 +221,6 @@ main .product-wrap {
 
 main .product-wrap .left-wrap {
   width: 40%;
-  min-width: 600px;
   height: 100%;
   background-image: url("./images/mainProduct.png");
   background-size: cover;
@@ -264,7 +263,22 @@ main .product-wrap .left-wrap .text-wrap p:last-child {
 }
 
 main .product-wrap .right-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 60%;
+}
+
+main .product-wrap .right-wrap svg {
+  width: 236px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+main .product-wrap .right-wrap .title-wrap {
+  float: right;
+  padding-right: 52px;
+  margin-bottom: 20px;
 }
 
 main .product-wrap .right-wrap .green-color-title {
@@ -272,8 +286,26 @@ main .product-wrap .right-wrap .green-color-title {
   font-size: 16px;
 }
 
-main .product-wrap .right-wrap svg {
-  width: 236px;
-  height: 14px;
-  flex-shrink: 0;
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 340px !important;
+  height: 340px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-list-wrap {
+  padding-left: 15%;
+}
+
+.product-list-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
 }

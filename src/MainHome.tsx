@@ -53,14 +53,18 @@ const Main = () => {
               </div>
               <div className="product-list-wrap">
                 <Swiper
-                  spaceBetween={10}
-                  slidesPerView={2}
+                  slidesPerView={"auto"}
+                  spaceBetween={40}
+                  grabCursor={true}
                   pagination={{ clickable: true }}
                   scrollbar={{ draggable: true }}
+                  style={{ width: '100%', height: '340px' }}
                 >
                   <SwiperSlide><img alt="이미지테슽1" src={productImg} /></SwiperSlide>
                   <SwiperSlide><img alt="이미지테슽2" src={productImg} /></SwiperSlide>
                   <SwiperSlide><img alt="이미지테슽3" src={productImg} /></SwiperSlide>
+                  <SwiperSlide><img alt="이미지테슽4" src={productImg} /></SwiperSlide>
+                  <SwiperSlide><img alt="이미지테슽5" src={productImg} /></SwiperSlide>
                 </Swiper>
                 <div></div>
                 <div></div>
