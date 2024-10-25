@@ -47,7 +47,7 @@ const Main = () => {
             <div>
               <div className="title-wrap">
                 <p className="green-color-title">제때 만든 먹거리 더보기</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="240" height="17" viewBox="0 0 240 17" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="240" height="17" viewBox="0 0 295 17" fill="none">
                   <path d="M2 15H238L220.5 1.5" stroke="#DEE9D7" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>

@@ -3,6 +3,31 @@ body {
   font-style: normal;
 }
 
+button {
+  box-sizing: border-box;
+  width: 145px;
+  height: 50px;
+  background: rgba(34, 34, 34, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgba(34, 34, 34, 0.70);
+}
+
+/* animation */
+button, button:hover, 
+.product-list-wrap img, .product-list-wrap img:hover,
+main .contents .box-wrap > div, main .contents .box-wrap > div:hover,
+main .product-wrap .right-wrap .title-wrap, main .product-wrap .right-wrap .title-wrap:hover {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
 /* header */
 header {
   padding: 24px 340px;
@@ -105,17 +130,6 @@ main {
   margin-top: -128px;
 }
 
-main button {
-  box-sizing: border-box;
-  width: 145px;
-  height: 50px;
-  background: rgba(34, 34, 34, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 16px;
-  color: #FFFFFF;
-  font-size: 16px;
-}
-
 main .green-color-title {
   color: #72BF44;
   font-weight: 600;
@@ -146,6 +160,10 @@ main .contents .box-wrap > div {
   border-radius: 40px;
   width: 608px;
   height: 500px;
+}
+
+main .contents .box-wrap > div:hover {
+  border-radius: 140px;
 }
 
 main .contents div p + p {
@@ -277,8 +295,12 @@ main .product-wrap .right-wrap svg {
 
 main .product-wrap .right-wrap .title-wrap {
   float: right;
-  padding-right: 52px;
+  padding-right: 20px;
   margin-bottom: 20px;
+}
+
+main .product-wrap .right-wrap .title-wrap:hover {
+  padding-right: 0;
 }
 
 main .product-wrap .right-wrap .green-color-title {
@@ -308,4 +330,8 @@ main .product-wrap .right-wrap .green-color-title {
   height: 100%;
   object-fit: cover;
   border-radius: 40px;
+}
+
+.product-list-wrap img:hover {
+  border-radius: 100px;
 }
