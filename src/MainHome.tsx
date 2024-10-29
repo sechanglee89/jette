@@ -4,7 +4,7 @@ import productImg from './images/product01.png';
 
 const Main = () => {
     return (
-      <main>
+      <main className="home">
         <div className="top-wrap">
           <div className="main-text-wrap">
             <div>
@@ -66,9 +66,6 @@ const Main = () => {
                   <SwiperSlide><img alt="이미지테슽4" src={productImg} /></SwiperSlide>
                   <SwiperSlide><img alt="이미지테슽5" src={productImg} /></SwiperSlide>
                 </Swiper>
-                <div></div>
-                <div></div>
-                <div></div>
               </div>
             </div>
           </div>
