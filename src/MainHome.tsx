@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import productImg from './images/product01.png';
+import productImg from './images/product_01.png';
+import longArrowRight from './images/long-arrow-right.png';
 
 const Main = () => {
     return (
@@ -47,11 +48,11 @@ const Main = () => {
             <div>
               <div className="title-wrap">
                 <p className="green-color-title">제때 만든 먹거리 더보기</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="240" height="17" viewBox="0 0 295 17" fill="none">
-                  <path d="M2 15H238L220.5 1.5" stroke="#DEE9D7" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+                <img alt="오른쪽 긴 화살표" src={longArrowRight} />
               </div>
               <div className="product-list-wrap">
+                {/* 슬라이드 영역 기본 노출 2개 반
+                네이버 스토어 API 조회하여 상품 유동적으로 처리 */}
                 <Swiper
                   slidesPerView={"auto"}
                   spaceBetween={40}

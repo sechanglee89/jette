@@ -1,5 +1,5 @@
 import { SetStateAction, useEffect, useState } from 'react';
-import productImg from './images/product02.png';
+import productImg from './images/product_02.png';
 import Pagination from 'react-js-pagination';
 
 // 페이지 이동
@@ -21,9 +21,10 @@ const Shop = () => {
           </div>
         </div>
       </div>
-      <div className="main-product-wrap">
+      <div className="main-body">
         <div className="product-main-wrap">
           <div className="product-list-wrap">
+            {/* 페이징에 따라 유동적으로 변경되어야 하는 이미지 영역 */}
             <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
             <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
             <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
@@ -35,6 +36,7 @@ const Shop = () => {
             <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
           </div>
         </div>
+        {/* 페이징 처리 */}
         <Pagination
             activePage={1} // 현재 페이지
             itemsCountPerPage={9} // 한 페이지 당 보여줄 아이템 갯수

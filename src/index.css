@@ -25,9 +25,9 @@ button:hover {
 button, 
 .product-list-wrap img,
 main .contents .box-wrap > div,
-main .product-wrap .right-wrap .title-wrap {
-  transition: 0.5s;
+main .product-wrap .right-wrap .title-wrap > img {
   -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /* header */
@@ -185,7 +185,7 @@ main .contents > div + div {
 main .top-wrap {
   display: flex;
   justify-content: center;
-  background-image: url("./images/mainBanner/mainBanner.png");
+  background-image: url("./images/mainBanner/main_banner.png");
   background-size: cover;
   height: 700px;
 }
@@ -194,16 +194,25 @@ main.home .top-wrap {
   height: 980px;
 }
 
+main.blueberry .main-body img,
+main.caring .main-body img {
+  border-radius: 16px;
+}
+
+main.blueberry .main-body {
+  padding: 80px 14%;
+}
+
 main.blueberry .top-wrap {
-  background-image: url("./images/mainBanner/blueberryBanner.png");
+  background-image: url("./images/mainBanner/blueberry_banner.png");
 }
 
 main.caring .top-wrap {
-  background-image: url("./images/mainBanner/caringBanner.png");
+  background-image: url("./images/mainBanner/caring_banner.png");
 }
 
 main.shop .top-wrap {
-  background-image: url("./images/mainBanner/shopBanner.png");
+  background-image: url("./images/mainBanner/shop_banner.png");
 }
 
 main .top-wrap .main-text-wrap {
@@ -258,7 +267,7 @@ main .product-wrap {
 main .product-wrap .left-wrap {
   width: 40%;
   height: 100%;
-  background-image: url("./images/mainProduct.png");
+  background-image: url("./images/main_product.png");
   background-size: cover;
   padding-right: 140px;
   display: flex;
@@ -305,25 +314,26 @@ main .product-wrap .right-wrap {
   width: 60%;
 }
 
-main .product-wrap .right-wrap svg {
-  width: 236px;
-  height: 14px;
-  flex-shrink: 0;
-}
-
 main .product-wrap .right-wrap .title-wrap {
   float: right;
-  padding-right: 20px;
   margin-bottom: 20px;
 }
 
-main .product-wrap .right-wrap .title-wrap:hover {
+main .product-wrap .right-wrap .title-wrap img {
+  float: right;
+  width: 236px;
+  height: 14px;
+  padding-right: 20px;
+}
+
+main .product-wrap .right-wrap .title-wrap:hover > img {
   padding-right: 0;
 }
 
 main .product-wrap .right-wrap .green-color-title {
   color: #6F8F5B;
   font-size: 16px;
+  width: 256px;
 }
 
 .swiper {
@@ -339,7 +349,7 @@ main .product-wrap .right-wrap .green-color-title {
   align-items: center;
 }
 
-.main-product-wrap {
+.main-body {
   padding: 80px 0;
 }
 
@@ -406,7 +416,9 @@ ul.pagination li {
   text-align: center;
 }
 
-ul.pagination li + li { margin-left: 10px; }
+ul.pagination li + li { 
+  margin-left: 10px; 
+}
 
 ul.pagination li a { 
   color: #AAA; 
@@ -415,7 +427,57 @@ ul.pagination li a {
   line-height: 20px;  
 }
 
-ul.pagination li.active a { color: #000; }
+ul.pagination li.active a {
+  color: #000; 
+}
 
-ul.pagination li a:hover,
-ul.pagination li a.active { color: #000; }
+ul.pagination li a:hover, ul.pagination li a.active { 
+  color: #000;
+}
+
+.sub-title {
+  color: #222;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sub-title.lead-icon > span {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.sub-title.lead-icon > span::before {
+  content: "";
+  display: block;
+  background-image: url("./images/icon/lead_icon.png");
+  background-repeat: no-repeat;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.sub-title + .sub-contents {
+  margin-top: 36px;
+}
+
+.sub-title.lead-icon + .sub-contents {
+  margin-top: 60px;
+}
+
+.sub-contents {
+  color: #222;
+  font-family: "Noto Sans CJK KR";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+}
+
+.sub-contents + img {
+  margin-top: 36px;
+}
+
+img + .sub-title {
+  margin-top: 80px;
+}
