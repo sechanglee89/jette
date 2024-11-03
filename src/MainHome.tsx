@@ -1,7 +1,12 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import productImg from './images/product_01.png';
 import longArrowRight from './images/long-arrow-right.png';
+import ProductList from './components/ProductList';
+
+const ProductListProps = {
+  limit: 10,
+  currentPage: 1,
+  type: "SWIPER"
+};
 
 const Main = () => {
     return (
@@ -51,22 +56,7 @@ const Main = () => {
                 <img alt="오른쪽 긴 화살표" src={longArrowRight} />
               </div>
               <div className="product-list-wrap">
-                {/* 슬라이드 영역 기본 노출 2개 반
-                네이버 스토어 API 조회하여 상품 유동적으로 처리 */}
-                <Swiper
-                  slidesPerView={"auto"}
-                  spaceBetween={40}
-                  grabCursor={true}
-                  pagination={{ clickable: true }}
-                  scrollbar={{ draggable: true }}
-                  style={{ width: '100%', height: '340px' }}
-                >
-                  <SwiperSlide><img alt="이미지테슽1" src={productImg} /></SwiperSlide>
-                  <SwiperSlide><img alt="이미지테슽2" src={productImg} /></SwiperSlide>
-                  <SwiperSlide><img alt="이미지테슽3" src={productImg} /></SwiperSlide>
-                  <SwiperSlide><img alt="이미지테슽4" src={productImg} /></SwiperSlide>
-                  <SwiperSlide><img alt="이미지테슽5" src={productImg} /></SwiperSlide>
-                </Swiper>
+                <ProductList {...ProductListProps}/>
               </div>
             </div>
           </div>

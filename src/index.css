@@ -30,6 +30,11 @@ main .product-wrap .right-wrap .title-wrap > img {
   transition: 0.5s;
 }
 
+html a {
+  text-decoration: none;
+  color: initial;
+}
+
 /* header */
 header {
   padding: 24px 340px;
@@ -71,11 +76,6 @@ header .text-wrap {
 header .text-wrap .header-link-wrap {
   display: flex;
   gap: 60px;
-}
-
-header .text-wrap .header-link-wrap > a {
-  text-decoration: none;
-  color: initial;
 }
 
 /* footer */
@@ -287,7 +287,8 @@ main .product-wrap .left-wrap .text-wrap > div {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  padding: 0 calc(100% - 570px);
+  padding-left: 40px;
+  padding-right: calc(100% - 570px);
 }
 
 main .product-wrap .left-wrap .text-wrap .title {
@@ -344,9 +345,6 @@ main .product-wrap .right-wrap .green-color-title {
 .swiper-slide {
   width: 340px !important;
   height: 340px !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .main-body {
@@ -395,6 +393,11 @@ main.home .product-list-wrap {
 .product-list-wrap img + p {
   margin-top: 16px;
   line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 줄 수 설정 */
+  overflow: hidden;
+  text-overflow: ellipsis; /* 생략 부호 추가 */
 }
 
 .pagination { 

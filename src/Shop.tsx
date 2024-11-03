@@ -1,10 +1,9 @@
-import { SetStateAction, useEffect, useState } from 'react';
-import productImg from './images/product_02.png';
-import Pagination from 'react-js-pagination';
+import ProductList from './components/ProductList';
 
-// 페이지 이동
-const changePageHandler = (page: SetStateAction<number>) => {
-	//setPage(page);
+const ProductListProps = {
+  limit: 9,
+  currentPage: 1,
+  type: "LIST"
 };
 
 const Shop = () => {
@@ -22,32 +21,8 @@ const Shop = () => {
         </div>
       </div>
       <div className="main-body">
-        <div className="product-main-wrap">
-          <div className="product-list-wrap">
-            {/* 페이징에 따라 유동적으로 변경되어야 하는 이미지 영역 */}
-            <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
-            <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
-            <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
-            <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
-            <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
-            <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
-            <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
-            <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
-            <div><img alt="이미지테슽1" src={productImg} /><p>현미 쌀치이이입</p></div>
-          </div>
-        </div>
-        {/* 페이징 처리 */}
-        <Pagination
-            activePage={1} // 현재 페이지
-            itemsCountPerPage={9} // 한 페이지 당 보여줄 아이템 갯수
-            totalItemsCount={46} // 총 아이템 갯수
-            pageRangeDisplayed={5} // paginator에 나타낼 페이지 범위
-            prevPageText={"<"} // "이전"을 나타낼 텍스트
-            nextPageText={">"} // "다음"을 나타낼 텍스트
-            hideFirstLastPages={true}
-            onChange={changePageHandler} // 페이지 변경을 핸들링하는 함수
-          />
-        </div>
+        <ProductList {...ProductListProps}/>
+      </div>
     </main>
   )
 }
