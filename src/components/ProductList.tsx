@@ -55,7 +55,7 @@ const ProductList = (props: ProductListProps) => {
 		};
 
 		productListData();
-	}, [props.limit, currentPage]); // 필요한 의존성 추가
+	}, [props.limit, props.currentPage, currentPage]); // 필요한 의존성 추가
 	
 	// 페이지 이동 핸들러
 	const changePageHandler = (page: number) => {
