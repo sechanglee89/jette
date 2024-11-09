@@ -12,6 +12,11 @@ import farm10Img from './images/farm/farm_10.png';
 import farm11Img from './images/farm/farm_11.png';
 import farm12Img from './images/farm/farm_12.png';
 
+import seedlings2yearImg from './images/farm/seedlings_2year.png';
+import seedlings3year01Img from './images/farm/seedlings_3year_01.png';
+import seedlings3year02Img from './images/farm/seedlings_3year_02.png';
+import seedlings4yearImg from './images/farm/seedlings_4year.png';
+
 const Blueberry = () => {
   return (
     <main className="blueberry">
@@ -106,15 +111,15 @@ const Blueberry = () => {
         <div className="blueberry-seedlings-sale-wrap">
           <p className="sub-title lead-icon"><span />블루베리 묘목 분양</p>
           <ul className="sub-contents">
-            <li>- 농장에서 직접 생산한 블루베리 묘목을 분양합니다. (4월 초순 ~ 6월 초순)</li>
-            <li>- 분양하는 묘목은 2~4년생이며, 3년생부터 꽃과 열매를 즐길 수 있으며, 가을철의 단풍은 무척 아름답습니다.</li>
-            <li>- 묘목은 택배도 가능하지만 세종 · 대전 · 공주지역은 농장에 오셔서 직접 선택하는 것이 좋습니다.</li>
+            <li>농장에서 직접 생산한 블루베리 묘목을 분양합니다. (4월 초순 ~ 6월 초순)</li>
+            <li>분양하는 묘목은 2~4년생이며, 3년생부터 꽃과 열매를 즐길 수 있으며, 가을철의 단풍은 무척 아름답습니다.</li>
+            <li>묘목은 택배도 가능하지만 세종 · 대전 · 공주지역은 농장에 오셔서 직접 선택하는 것이 좋습니다.</li>
           </ul>
           <div className="normal-wrap">
-            <div><img alt="블루베리 농장 전경_11" src={farm11Img}></img><p>농장 전경</p></div>
-            <div><img alt="블루베리 농장 전경_12" src={farm12Img}></img><p>농장 전경</p></div>
-            <div><img alt="블루베리 농장 전경_12" src={farm12Img}></img><p>농장 전경</p></div>
-            <div><img alt="블루베리 농장 전경_12" src={farm12Img}></img><p>농장 전경</p></div>
+            <div><img alt="2년생 묘목" src={seedlings2yearImg}></img><p>2년생 묘목</p></div>
+            <div><img alt="3년생 묘목_01" src={seedlings3year01Img}></img><p>3년생 묘목</p></div>
+            <div><img alt="3년생 묘목_01" src={seedlings3year02Img}></img><p>3년생 묘목</p></div>
+            <div><img alt="4년생 묘목" src={seedlings4yearImg}></img><p>4년생 묘목</p></div>
           </div>
         </div>
       </div>
