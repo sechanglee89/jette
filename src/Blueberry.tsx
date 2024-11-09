@@ -121,6 +121,7 @@ const Blueberry = () => {
             <div><img alt="3년생 묘목_01" src={seedlings3year02Img}></img><p>3년생 묘목</p></div>
             <div><img alt="4년생 묘목" src={seedlings4yearImg}></img><p>4년생 묘목</p></div>
           </div>
+          <div className="notice-wrap"><p className="notice-title">※ 블루베리 체험 및 묘목 분양 문의처 : 제때협동조합 010-7769-3192</p></div>
         </div>
       </div>
     </main>

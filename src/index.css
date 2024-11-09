@@ -654,6 +654,7 @@ img + .sub-title {
   flex-wrap: wrap;
   gap: 40px;
   margin-top: 36px;
+  margin-bottom: 64px;
 }
 
 .blueberry-experience-wrap > div > div > div > p,
@@ -665,3 +666,11 @@ img + .sub-title {
   width: calc(100% / 2 - 40px);
 }
 
+.notice-wrap {
+  text-align: center;
+}
+
+.notice-wrap > p.notice-title {
+  color: #6F8F5B;
+  font-size: 24px;
+}
