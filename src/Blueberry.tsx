@@ -32,7 +32,7 @@ const Blueberry = () => {
       </div>
       <div className="main-body">
         {/* 블루베리 농장 */}
-        <div className="blueberry-farm-wrap">
+        <div className="blueberry-farm-wrap padding-wrap">
           <p className="sub-title lead-icon"><span />블루베리 농장</p>
           <p className="sub-contents">
             <span className="highlight">식물터널, 황톳길, 원두막, 연못 등 잘 꾸며진 정원형 농장</span>에 다양한 품종의 블루베리를 친환경 재배하고 있으며,<br/>
@@ -47,7 +47,7 @@ const Blueberry = () => {
           </p>
           <div className="table-wrap">
             <div className="table-header">블루베리 수확 체험<span className="table-icon">단체</span></div>
-            <div className="table-box four-box">
+            <div className="table-box four-box full-wrap">
               <div>
                 <p className="table-sub-title">체험 대상</p>
                 <p className="table-sub-contents">
@@ -84,8 +84,8 @@ const Blueberry = () => {
           </div>
         </div>
         {/* 블루베리 농장 체험 사진 */}
-        <div className="blueberry-experience-wrap">
-          <div>
+        <div className="blueberry-experience-wrap green-wrap">
+          <div className="padding-wrap">
             <div className="normal-wrap">
               <div><img alt="블루베리 농장 전경_01" src={farm01Img}></img><p>농장 전경</p></div>
               <div><img alt="블루베리 농장 전경_02" src={farm02Img}></img><p>주차장</p></div>
@@ -108,12 +108,12 @@ const Blueberry = () => {
           </div>
         </div>
         {/* 블루베리 묘목 분양 */}
-        <div className="blueberry-seedlings-sale-wrap">
+        <div className="blueberry-seedlings-sale-wrap padding-wrap">
           <p className="sub-title lead-icon"><span />블루베리 묘목 분양</p>
           <ul className="sub-contents">
-            <li>농장에서 직접 생산한 블루베리 묘목을 분양합니다. (4월 초순 ~ 6월 초순)</li>
-            <li>분양하는 묘목은 2~4년생이며, 3년생부터 꽃과 열매를 즐길 수 있으며, 가을철의 단풍은 무척 아름답습니다.</li>
-            <li>묘목은 택배도 가능하지만 세종 · 대전 · 공주지역은 농장에 오셔서 직접 선택하는 것이 좋습니다.</li>
+            <li><p>농장에서 직접 생산한 블루베리 묘목을 분양합니다. (4월 초순 ~ 6월 초순)</p></li>
+            <li><p>분양하는 묘목은 2~4년생이며, 3년생부터 꽃과 열매를 즐길 수 있으며, 가을철의 단풍은 무척 아름답습니다.</p></li>
+            <li><p>묘목은 택배도 가능하지만 세종 · 대전 · 공주지역은 농장에 오셔서 직접 선택하는 것이 좋습니다.</p></li>
           </ul>
           <div className="normal-wrap">
             <div><img alt="2년생 묘목" src={seedlings2yearImg}></img><p>2년생 묘목</p></div>

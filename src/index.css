@@ -205,8 +205,7 @@ main.caring .main-body img {
   width: 100%;
 }
 
-main.blueberry .main-body .blueberry-farm-wrap,
-main.blueberry .main-body .blueberry-seedlings-sale-wrap {
+main .main-body .padding-wrap {
   padding: 80px 14%;
 }
 
@@ -472,16 +471,23 @@ ul.pagination li a:hover, ul.pagination li a.active {
   margin-top: 36px;
 }
 
-.sub-title.lead-icon + .sub-contents {
+.sub-title.lead-icon + .sub-contents,
+.sub-title.lead-icon + .sub-sub-title {
   margin-top: 60px;
 }
 
-.sub-title.lead-icon + .sub-contents li::before {
+.sub-title.lead-icon + .sub-contents li::marker {
   content: "-";
-  display: inline-block;
-  position: relative;
-  width: 20px;
-  vertical-align: text-bottom;
+}
+
+.table-wrap .table-box .table-sub-contents li {
+  list-style-type: disc;
+  margin-left: 24px;
+}
+
+.sub-title.lead-icon + .sub-contents li > p,
+.table-wrap .table-box .table-sub-contents li > p {
+  padding-left: 10px;
 }
 
 .sub-contents {
@@ -492,7 +498,22 @@ ul.pagination li a:hover, ul.pagination li a.active {
   line-height: 150%; /* 36px */
 }
 
-.sub-contents + img {
+.sub-contents + .notice-wrap {
+  margin-top: 12px;
+}
+
+.sub-sub-title {
+  color: #222;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.sub-sub-title + .sub-contents {
+  margin-top: 16px;
+}
+
+.sub-contents + img,
+.notice-wrap + img {
   margin-top: 36px;
 }
 
@@ -536,24 +557,35 @@ img + .sub-title {
   margin-top: 24px;
 }
 
-.table-wrap .table-box.four-box {
-  display: flex;
-  gap: 9px;
-  width: 100%;
-}
-
 .table-wrap .table-box > div {
   display: flex;
   padding: 24px 24px 23px 24px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 16px;
   border: 1px solid #EAEAEA;
+  background-color: white;
+  text-align: center;
+}
+
+.table-wrap .table-box.four-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  width: 100%;
+}
+
+.table-wrap .table-box.four-box.full-wrap {
+  align-items: unset;
 }
 
 .table-wrap .table-box.four-box > div {
   width: 292px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.table-wrap .table-box.four-box > div.middle-size {
+  flex-grow: 2;
 }
 
 .table-wrap .table-box > div > .table-sub-title {
@@ -567,7 +599,11 @@ img + .sub-title {
   font-size: 20px;
   font-weight: 600;
   line-height: 150%; /* 30px */
-  text-align: center;
+  margin-top: 8px;
+}
+
+.table-wrap .table-box > div > .table-sub-contents ul {
+  text-align: left;
 }
 
 .highlight {
@@ -620,23 +656,21 @@ img + .sub-title {
   flex-direction: column;
 }
 
-.blueberry-experience-wrap {
+.green-wrap {
   background: rgba(114, 191, 68, 0.05);
 }
 
-.blueberry-experience-wrap > div {
-  padding: 80px 14%;
-}
-
 .blueberry-experience-wrap > div p,
-.blueberry-seedlings-sale-wrap > div p {
+.blueberry-seedlings-sale-wrap > div p,
+.masonry-wrap p {
   color: #92A992;
   font-size: 18px;
   font-weight: 500;
   line-height: 150%; /* 27px */
 }
 
-.blueberry-experience-wrap p::before {
+.blueberry-experience-wrap p::before,
+.masonry-wrap p::before {
   content: "";
   display: inline-block;
   background-image: url("images/icon/short-arrow-up.png");
@@ -658,7 +692,8 @@ img + .sub-title {
 }
 
 .blueberry-experience-wrap > div > div > div > p,
-.blueberry-seedlings-sale-wrap .normal-wrap p {
+.blueberry-seedlings-sale-wrap .normal-wrap p,
+.masonry-wrap p {
   margin-top: 16px;
 }
 
@@ -673,4 +708,20 @@ img + .sub-title {
 .notice-wrap > p.notice-title {
   color: #6F8F5B;
   font-size: 24px;
+}
+
+.caring .table-wrap {
+  margin-top: 88px;
+}
+
+.caring .table-wrap + div {
+  margin-top: 36px;
+}
+
+.caring .sub-contents + .table-wrap {
+  margin-top: 44px;
+}
+
+.caring-farm-top-wrap .notice-wrap {
+  text-align: left;
 }
