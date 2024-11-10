@@ -11,6 +11,7 @@ import caring09Img from './images/caring/caring_09.png';
 import caring10Img from './images/caring/caring_10.png';
 import caring11Img from './images/caring/caring_11.png';
 import caring12Img from './images/caring/caring_12.png';
+import mountainImg from './images/caring/mountain.png';
 
 const Caring = () => {
   return (
@@ -156,7 +157,7 @@ const Caring = () => {
           </div>
         </div>
         {/* 사랑드림 농장 */}
-        <div className="caring-farm-bottom-wrap padding-wrap">
+        <div className="caring-farm-bottom-wrap">
           <div className="table-wrap">
             <div className="table-header">사랑드림 농장</div>
             <div className="table-box">
@@ -169,8 +170,32 @@ const Caring = () => {
               </div>
             </div>
           </div>
-          <p className="sub-title lead-icon"><span />사회적 농업 소개</p>
-          <div className="notice-wrap"><p className="notice-title">※ 블루베리 체험 및 묘목 분양 문의처 : 제때협동조합 010-7769-3192</p></div>
+          <div className="farming-introduction-wrap">
+            <div className="mix-contents">
+              <p className="sub-title lead-icon"><span />사회적 농업 소개</p>
+              <div className="left-title-wrap">
+                <div>
+                  <span>사회적 농업이란?</span>
+                  <span>
+                    농업을 통하여 취약계층 등에 돌봄, 치유, 교육 및 고용등의 서비스를 제공합니다.<br/>
+                    (취약계층 : 장애인, 고령자, 아동, 약물중독자, 다문화가족, 저소득층 등)
+                  </span>
+                </div>
+                <div>
+                  <span>사회적 농장이란?</span>
+                  <span>사회적 농업을 실천하는 법인 또는 단체로서 지정받은 농장을 말합니다.</span>
+                </div>
+                <div>
+                  <span>농촌돌봄농장이란?</span>
+                  <span>사회적 농업을 실천하고 있는 농촌지역 소재 법인 또는 단체를 말합니다.</span>
+                </div>
+              </div>
+              <div className="mountain-wrap">
+                <img alt="산" src={mountainImg} />
+              </div>
+            </div>
+            <div className="notice-wrap"><p className="notice-title">※ 농촌 돌봄 농장 참여 문의처 : 제때협동조합 010-7769-3192</p></div>
+          </div>
         </div>
       </div>
     </main>

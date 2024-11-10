@@ -1,7 +1,18 @@
+html {
+  /* 결과 → 16px × 62.5% = 10px */
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Pretendard';
   font-style: normal;
+  font-size: 1.6rem;
 }
+
+/* 스크롤바 제거 */
+/* body::-webkit-scrollbar {
+  display: none;
+} */
 
 button {
   box-sizing: border-box;
@@ -25,14 +36,16 @@ button:hover {
 button, 
 .product-list-wrap img,
 main .contents .box-wrap > div,
-main .product-wrap .right-wrap .title-wrap > img {
+main .product-wrap .right-wrap .title-wrap img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 html a {
+  display: block;
   text-decoration: none;
   color: initial;
+  width: fit-content;
 }
 
 /* header */
@@ -125,6 +138,17 @@ footer .text-wrap > div {
 
 footer .text-wrap .company-wrap {
   margin-top: 23px;
+}
+
+footer .store, footer .location {
+  background-image: url("./images/icon/store_icon.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  padding-left: 24px;
+}
+
+footer .title.location {
+  background-image: url("./images/icon/location_icon.png");
 }
 
 /* contents */
@@ -333,7 +357,7 @@ main .product-wrap .right-wrap .title-wrap img {
   padding-right: 20px;
 }
 
-main .product-wrap .right-wrap .title-wrap:hover > img {
+main .product-wrap .right-wrap .title-wrap:hover img {
   padding-right: 0;
 }
 
@@ -388,6 +412,7 @@ main.home .product-list-wrap {
 .product-main-wrap .product-list-wrap img {
   height: unset;
   display: block;
+  max-width: 346px;
 }
 
 .product-main-wrap .product-list-wrap > div {
@@ -618,11 +643,6 @@ img + .sub-title {
   margin-bottom: 1rem;
 }
 
-.normal-wrap.half-and-half + p,
-.blueberry-seedlings-sale-wrap > div p {
-  text-align: center;
-}
-
 .normal-wrap > div:first-child {
   width: 60%;
 }
@@ -632,10 +652,6 @@ img + .sub-title {
   flex-direction: column;
   justify-content: flex-end;
   width: 40%;
-}
-
-.blueberry-experience-wrap .normal-wrap:first-child img {
-  height: unset;
 }
 
 .normal-wrap.half-and-half > div {
@@ -660,6 +676,25 @@ img + .sub-title {
   background: rgba(114, 191, 68, 0.05);
 }
 
+.notice-wrap {
+  text-align: center;
+}
+
+.notice-wrap > p.notice-title {
+  color: #6F8F5B;
+  font-size: 24px;
+}
+
+/* 블루베리 농장 */
+.normal-wrap.half-and-half + p,
+.blueberry-seedlings-sale-wrap > div p {
+  text-align: center;
+}
+
+.blueberry-experience-wrap .normal-wrap:first-child img {
+  height: unset;
+}
+
 .blueberry-experience-wrap > div p,
 .blueberry-seedlings-sale-wrap > div p,
 .masonry-wrap p {
@@ -673,14 +708,13 @@ img + .sub-title {
 .masonry-wrap p::before {
   content: "";
   display: inline-block;
-  background-image: url("images/icon/short-arrow-up.png");
+  background-image: url("images/icon/short_arrow_up.png");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   margin-right: 4px;
   vertical-align: sub;
 }
-
 
 .blueberry-seedlings-sale-wrap .normal-wrap {
   display: flex;
@@ -701,15 +735,7 @@ img + .sub-title {
   width: calc(100% / 2 - 40px);
 }
 
-.notice-wrap {
-  text-align: center;
-}
-
-.notice-wrap > p.notice-title {
-  color: #6F8F5B;
-  font-size: 24px;
-}
-
+/* 농촌 돌봄 농장 */
 .caring .table-wrap {
   margin-top: 88px;
 }
@@ -724,4 +750,66 @@ img + .sub-title {
 
 .caring-farm-top-wrap .notice-wrap {
   text-align: left;
+}
+
+.caring .caring-farm-bottom-wrap .table-wrap,
+.caring .caring-farm-bottom-wrap .table-wrap .table-header {
+  margin-top: unset;
+}
+
+.caring .caring-farm-bottom-wrap .table-wrap {
+  padding: 80px 14% 0 14%;
+}
+
+.caring .farming-introduction-wrap {
+  background-image: url("./images/caring/cloud.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 0 14%;
+}
+
+.caring .caring-farm-bottom-wrap .notice-wrap {
+  margin-top: 80px;
+}
+
+.sub-title + .left-title-wrap {
+  margin-top: 60px;
+}
+
+.mountain-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+main.caring .main-body .mountain-wrap img {
+  width: unset;
+}
+
+.mix-contents {
+  padding: 0 calc(100% - 1226px);
+}
+
+.left-title-wrap > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-title-wrap > div > span {
+  font-size: 2.4rem;
+  flex-basis: 0;
+  flex-grow: 1.4;
+  color: #72BE44;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+  min-width: 200px;
+}
+
+.left-title-wrap > div > span:last-child {
+  flex-grow: 6;
+  color: #222;
+  font-weight: 400;
+}
+
+.left-title-wrap > div + div {
+  margin-top: 10px;
 }

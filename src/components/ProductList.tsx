@@ -79,7 +79,7 @@ const ProductList = (props: ProductListProps) => {
 			{data && data.total > 0 ? ( // null 체크 추가
 				data.items.map((product) => (
 					<SwiperSlide key={product.productId}>
-						<a href={product.link} target="_blank" rel="noreferrer">
+						<a rel="noreferrer" href={product.link} target="_blank">
 							<img alt={product.title} src={product.image} />
 							<p dangerouslySetInnerHTML={{__html: product.title}}></p>
 						</a>
@@ -96,7 +96,7 @@ const ProductList = (props: ProductListProps) => {
 				<div className="product-list-wrap">
 					{data && data.total > 0 ? ( // null 체크 추가
 						data.items.map((product) => (
-							<div key={product.productId}><a href={product.link} target="_blank" rel="noreferrer"><img alt={product.title} src={product.image} /><p dangerouslySetInnerHTML={{__html: product.title}}></p></a></div>
+							<div key={product.productId}><a rel="noreferrer" href={product.link} target="_blank"><img alt={product.title} src={product.image} /><p dangerouslySetInnerHTML={{__html: product.title}}></p></a></div>
 						))
 					) : (
 						""
