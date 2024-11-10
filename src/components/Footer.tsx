@@ -1,4 +1,4 @@
-import logo from '../images/logo.svg';
+import logo from '../images/footer_logo.png';
 
 const Footer = () => {
     return (
@@ -15,6 +15,7 @@ const Footer = () => {
                 <p><span className="title">영업시간</span> 오전 9시 - 오후 6시</p>
                 <p><span className="title">고객상담전화</span> 010-7769-3192</p>
               </div>
+              <span className="line hide"/>
               <div>
                 <a rel="noreferrer" href="https://smartstore.naver.com/cct7007" target="_blank"><p className="title store">제때 스마트스토어</p></a>
                 <a rel="noreferrer" href="https://naver.me/G0f17t7g" target="_blank"><p className="title location">농장 오시는 길</p></a>
