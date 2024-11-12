@@ -304,11 +304,13 @@ main .about-wrap {
 main .about-wrap .blueberry-wrap {
   background-image: url("./images/blueberry.png");
   background-size: cover;
+  background-position: center;
 }
 
 main .about-wrap .caring-wrap {
   background-image: url("./images/caring.png");
   background-size: cover;
+  background-position: center;
 }
 
 main .product-wrap {
@@ -320,11 +322,11 @@ main .product-wrap .left-wrap {
   width: 40%;
   height: 100%;
   background-image: url("./images/main_product.png");
-  background-size: cover;
   padding-right: 140px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-position-x: -115px;
 }
 
 main .product-wrap .left-wrap .text-wrap {
@@ -1025,5 +1027,116 @@ header.is-active > div > div.burger-sticks {
 
   footer .text-wrap .company-wrap {
     font-size: 13px;
+  }
+
+  button {
+    width: 120px;
+    height: 42px;
+  }
+
+  main .top-wrap .main-text-wrap {
+    font-size: 16px;
+    padding: 0 76px;
+  }
+
+  main .top-wrap .main-text-wrap .title,
+  main .contents .title {
+    font-size: 26px;
+  }
+
+  main .green-color-title {
+    font-size: 16px;
+  }
+
+  main .contents {
+    font-size: 18px;
+    padding: 80px 38px 24px 38px;
+  }
+
+  main .contents div p + p {
+    margin-top: 16px;
+  }
+
+  main .contents > div + div {
+    margin-top: 80px;
+  }
+
+  main .contents .box-wrap {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  main .contents .box-wrap > div {
+    width: 100%;
+    height: unset;
+    border-radius: 16px;
+    aspect-ratio: 1;
+  }
+
+  main .contents .box-wrap > div:hover {
+    border-radius: 16px;
+  }
+
+  main .about-wrap, main .product-wrap {
+    height: unset;
+    flex-direction: column;
+  }
+  
+  main .product-wrap .left-wrap {
+    width: 100%;
+    height: 100vh;
+  }
+
+  main .product-wrap .right-wrap {
+    width: 100%;
+  }
+
+  main.home .product-list-wrap {
+    padding: 80px 0 80px 16px;
+  }
+
+  main .product-wrap .left-wrap .text-wrap {
+    margin-bottom: 40px;
+    height: 150px;
+    margin-right: 50px;
+  }
+
+  main .product-wrap .left-wrap .text-wrap .title {
+    font-size: 20px;
+  }
+
+  main .product-wrap .left-wrap .text-wrap .green-color-title + .title {
+    margin-top: 4px;
+  }
+
+  main .product-wrap .left-wrap .text-wrap .title + p {
+    margin-top: 8px;
+  }
+
+  main .product-wrap .right-wrap .title-wrap img {
+    width: 185px;
+    padding-right: 16px;
+  }
+
+  main .product-wrap .right-wrap .green-color-title {
+    width: 201px;
+  }
+
+  main .product-wrap .right-wrap .title-wrap {
+    margin-top: 80px;
+    margin-bottom: 24px;
+  }
+
+  .product-list-wrap img + p {
+    font-size: 20px;
+  }
+
+  .swiper {
+    height: 304px !important;
+  }
+
+  .swiper-slide {
+    width: 240px !important;
+    height: 240px !important;
   }
 }
