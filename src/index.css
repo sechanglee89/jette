@@ -1037,11 +1037,16 @@ header.is-active > div > div.burger-sticks {
   button {
     width: 120px;
     height: 42px;
+    border-radius: 8px;
   }
 
   main .top-wrap .main-text-wrap {
     font-size: 16px;
     padding: 0 76px;
+  }
+
+  main .top-wrap .main-text-wrap p + p {
+    margin-top: 12px;
   }
 
   main .top-wrap .main-text-wrap .title,
@@ -1060,6 +1065,10 @@ header.is-active > div > div.burger-sticks {
 
   main .top-wrap .main-text-wrap p + button {
     margin-top: 24px;
+    border-radius: 8px;
+    width: unset;
+    height: unset;
+    padding: 12px 24px;
   }
 
   main .green-color-title {
@@ -1160,5 +1169,26 @@ header.is-active > div > div.burger-sticks {
   .swiper-slide {
     width: 240px !important;
     height: 240px !important;
+  }
+
+  main.shop .main-body {
+    padding: 40px 16px 80px 16px;
+  }
+
+  main.shop .top-wrap .main-text-wrap > div > p:nth-child(4) {
+    margin-top: 1px;
+  }
+
+  .product-main-wrap .product-list-wrap > div {
+    width: calc(100% / 2 - 15px);
+  }
+
+  .product-list-wrap img,
+  .product-list-wrap img:hover {
+    border-radius: 16px;
+  }
+
+  .product-list-wrap img + p {
+    font-size: 16px;
   }
 }
