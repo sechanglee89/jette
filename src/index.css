@@ -892,6 +892,11 @@ header.is-active > div > div.burger-sticks {
 
 /* 모바일 + 태블릿 800px 기준 */
 @media (max-width: 800px) {
+
+  .mw-tag {
+    display: inherit;
+  }
+  
   header {
     padding: 0 16px;
   }
@@ -1040,12 +1045,29 @@ header.is-active > div > div.burger-sticks {
   }
 
   main .top-wrap .main-text-wrap .title,
+  main .top-wrap .main-text-wrap .title + p {
+    line-height: 130%;
+  }
+
+  main .top-wrap .main-text-wrap .title,
   main .contents .title {
     font-size: 26px;
   }
 
+  main .top-wrap .main-text-wrap .title + p {
+    margin-top: 16px;
+  }
+
+  main .top-wrap .main-text-wrap p + button {
+    margin-top: 24px;
+  }
+
   main .green-color-title {
     font-size: 16px;
+  }
+
+  main .contents div .green-color-title + p {
+    line-height: 130%;
   }
 
   main .contents {

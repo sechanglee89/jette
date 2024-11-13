@@ -30,8 +30,8 @@ const Main = () => {
       <div className="top-wrap">
         <div className="main-text-wrap">
           <div>
-            <p className="title">자연의 소중함을 느낄 수 있는 순간, 제때</p>
-            <p>제때 따서 제때 먹는, 자연의 축복이 담긴 건강한 선택으로 일상을 빛나게 해보세요.</p>
+            <p className="title">자연의 소중함을<br className="mw-tag hide" /> 느낄 수 있는 순간, 제때</p>
+            <p>제때 따서 제때 먹는,<br className="mw-tag hide" /> 자연의 축복이 담긴 건강한 선택으로<br className="mw-tag hide" /> 일상을 빛나게 해보세요.</p>
             <button onClick={goBlueberryPage}>더 알아보기</button>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Main = () => {
         <div className="contents">
           <div>
             <p className="green-color-title">About us</p>
-            <p>탐스러운 블루베리와 행복한 미소가 만나는 그 순간을 아이들에게 선물하세요.</p>
+            <p>탐스러운 블루베리와 행복한 미소가 만나는<br className="mw-tag hide" /> 그 순간을 아이들에게 선물하세요.</p>
           </div>
           <div className="box-wrap">
             <div className="blueberry-wrap">
