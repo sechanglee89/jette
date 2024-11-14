@@ -1,4 +1,3 @@
-import 'swiper/css';
 import longArrowRight from './images/long_arrow_right.png';
 import ProductList from './components/ProductList';
 import { useNavigate } from 'react-router-dom';

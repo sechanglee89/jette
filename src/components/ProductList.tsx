@@ -65,7 +65,7 @@ const ProductList = (props: ProductListProps) => {
 	// type에 따른 응답 분기 처리
 	if (props.type === "SWIPER") {
 		return <>
-			{/* 슬라이드 영역 기본 노출 2개 반
+			{/*슬라이드 영역 기본 노출 2개 반
 			네이버 스토어 API 조회하여 상품 유동적으로 처리 */}
 			<Swiper
 				slidesPerView={"auto"}
