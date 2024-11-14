@@ -23,9 +23,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "npm run clean && npm run build:parcel",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build && copy CNAME dist\\"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +50,10 @@
   "devDependencies": {
     "@types/react-js-pagination": "^3.0.7"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sechanglee89/jette.git"
+  },
+  "homepage": "https://제때.com",
   "proxy": "https://openapi.naver.com"
 }
