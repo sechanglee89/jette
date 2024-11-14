@@ -326,7 +326,6 @@ main .product-wrap .left-wrap {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-position-x: -115px;
 }
 
 main .product-wrap .left-wrap .text-wrap {
