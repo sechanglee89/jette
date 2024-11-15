@@ -29,23 +29,17 @@ const ProductList = (props: ProductListProps) => {
 
 	useEffect(() => {
 		const productListData = async () => {
-			const URL = "/v1/search/shop.json";
-			const ClientID = "HAwV_5i2xat1aadc3L3F";
-			const ClientSecret = "_Zn3cYp2OX";
+			const URL = "http://localhost:5000/api/products";
 
 			console.log("call productListData limit : ", props.limit + ", currentPage : ", props.currentPage)
 
 			try {
 				const res = await axios.get(URL, {
 					params: {
-						query: "프로랑스&mall=7883144",
+					  query: "프로랑스&mall=7883144",
 						display: props.limit,
 						start: (currentPage - 1) * props.limit + 1, // 시작 페이지 계산
 						sort: "date"
-					},
-					headers: {
-						"X-Naver-Client-Id": ClientID,
-						"X-Naver-Client-Secret": ClientSecret,
 					},
 				});
 				setData(res.data || null);
