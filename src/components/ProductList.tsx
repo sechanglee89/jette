@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react"; 
 import Pagination from "react-js-pagination";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 interface SearchResultBody {
     total: number;
