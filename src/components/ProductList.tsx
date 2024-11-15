@@ -30,7 +30,10 @@ const ProductList = (props: ProductListProps) => {
 
 	useEffect(() => {
 		const productListData = async () => {
-			const URL = "http://localhost:5000/api/products";
+			// const URL = "http://localhost:5000/api/products";
+			const URL = "https://cors-anywhere.herokuapp.com/https://openapi.naver.com/v1/search/shop.json";
+      const ClientID = 'HAwV_5i2xat1aadc3L3F';
+      const ClientSecret = '_Zn3cYp2OX';
 
 			console.log("call productListData limit : ", props.limit + ", currentPage : ", props.currentPage)
 
@@ -42,6 +45,10 @@ const ProductList = (props: ProductListProps) => {
 						start: (currentPage - 1) * props.limit + 1, // 시작 페이지 계산
 						sort: "date"
 					},
+          headers: {
+            'X-Naver-Client-Id': ClientID,
+            'X-Naver-Client-Secret': ClientSecret
+          }
 				});
 				setData(res.data || null);
 			} catch (e) {
