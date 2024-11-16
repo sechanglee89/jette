@@ -28,6 +28,11 @@ body {
 .hide {
   display: none;
 }
+
+.display-block {
+  display: block !important;
+}
+
 /* 스크롤바 제거 */
 /* body::-webkit-scrollbar {
   display: none;
@@ -969,6 +974,14 @@ header.is-active > div > div.burger-sticks {
     margin-top: unset;
   }
 
+  main .main-body .padding-wrap {
+    padding: 40px 24px;
+  }
+
+  main .main-body .blueberry-seedlings-sale-wrap.padding-wrap {
+    padding-bottom: 80px;
+  }
+
   main .product-wrap .left-wrap {
     padding-right: unset;
   }
@@ -1041,7 +1054,7 @@ header.is-active > div > div.burger-sticks {
 
   main .top-wrap .main-text-wrap {
     font-size: 16px;
-    padding: 0 76px;
+    padding: 0 36px;
   }
 
   main .top-wrap .main-text-wrap p + p {
@@ -1074,13 +1087,13 @@ header.is-active > div > div.burger-sticks {
     font-size: 16px;
   }
 
-  main .contents div .green-color-title + p {
-    line-height: 130%;
-  }
-
   main .contents {
     font-size: 18px;
-    padding: 80px 38px 24px 38px;
+    padding: 80px 24px 24px 24px;
+  }
+
+  main .contents div .green-color-title + p {
+    line-height: 130%;
   }
 
   main .contents div p + p {
@@ -1174,7 +1187,15 @@ header.is-active > div > div.burger-sticks {
     padding: 40px 16px 80px 16px;
   }
 
-  main.shop .top-wrap .main-text-wrap > div > p:nth-child(4) {
+  main.caring .main-body {
+    padding: 40px 24px 80px 24px;
+  }
+
+  main.caring .main-body .padding-wrap {
+    padding: unset;
+  }
+
+  main .top-wrap .main-text-wrap > div > p:nth-child(4) {
     margin-top: 1px;
   }
 
@@ -1187,7 +1208,160 @@ header.is-active > div > div.burger-sticks {
     border-radius: 16px;
   }
 
-  .product-list-wrap img + p {
+  .product-list-wrap img + p,
+  .sub-contents, .sub-sub-title {
     font-size: 16px;
+  }
+
+  .sub-title {
+    font-size: 20px;
+  }
+
+  .sub-title.lead-icon > span::before {
+    background-size: 36px 36px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .sub-contents {
+    line-height: 160%;
+  }
+
+  .sub-sub-title + .sub-contents {
+    margin-top: 12px;
+  }
+
+  .sub-contents li + li {
+    margin-top: 8px;
+  }
+
+  .sub-title.lead-icon + .sub-contents,
+  .sub-title.lead-icon + .sub-sub-title,
+  .sub-contents + img,
+  .notice-wrap + img {
+    margin-top: 24px;
+  }
+
+  img + .sub-title {
+    margin-top: 40px;
+  }
+
+  .table-wrap .table-header,
+  .table-wrap .table-box > div > .table-sub-title {
+    font-size: 16px;
+    line-height: normal;
+    border-radius: 8px;
+  }
+
+  .table-wrap .table-header .table-icon {
+    font-size: 14px;
+  }
+
+  .table-wrap .table-box {
+    margin-top: 16px;
+  }
+
+  .table-wrap .table-box.four-box {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .table-wrap .table-box.four-box > div {
+    width: unset;
+    padding: 24px 0;
+  }
+
+  .table-wrap .table-box.four-box > div.middle-size .table-sub-contents {
+    display: flex;
+    justify-content: center;
+  }
+
+  .table-wrap .table-box > div > .table-sub-contents {
+    font-size: 16px;
+  }
+
+  main.blueberry .main-body img, 
+  main.caring .main-body img,
+  .table-wrap .table-box > div {
+    border-radius: 8px;
+  }
+
+  .normal-wrap {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .normal-wrap > div:first-child,
+  .normal-wrap > div:last-child,
+  .blueberry-seedlings-sale-wrap .normal-wrap > div {
+    width: unset;
+  }
+
+  .normal-wrap.half-and-half + p {
+    display: none;
+  }
+
+  .blueberry-experience-wrap > div > div > div > p, 
+  .blueberry-seedlings-sale-wrap .normal-wrap p, 
+  .masonry-wrap p {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .blueberry-seedlings-sale-wrap .normal-wrap {
+    gap: 16px;
+    margin-top: 24px;
+    margin-bottom: 80px;
+  }
+
+  /* MW div 정렬 순서 변경 */
+  .masonry-wrap {
+    display: flex;
+    flex-direction: column;
+    column-count: unset;
+    column-gap: unset;
+  }
+
+  .masonry-wrap > div {
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  .masonry-wrap > div:nth-child(1) {
+    order: 0;
+  }
+
+  .masonry-wrap > div:nth-child(2) {
+    order: 2;
+  }
+
+  .masonry-wrap > div:nth-child(3) {
+    order: 4;
+  }
+
+  .masonry-wrap > div:nth-child(4) {
+    order: 6;
+  }
+
+  .masonry-wrap > div:nth-child(5) {
+    order: 1;
+  }
+
+  .masonry-wrap > div:nth-child(6) {
+    order: 3;
+  }
+
+  .masonry-wrap > div:nth-child(7) {
+    order: 5;
+  }
+
+  .masonry-wrap > div:nth-child(8) {
+    order: 7;
+  }
+
+  .notice-wrap > p.notice-title {
+    font-size: 18px;
   }
 }

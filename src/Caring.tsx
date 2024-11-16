@@ -29,7 +29,7 @@ const Caring = () => {
       <div className="main-body">
         {/* 농촌 돌봄 농장 */}
         <div className="caring-farm-top-wrap padding-wrap">
-          <p className="sub-title lead-icon">농촌 돌봄 농장</p>
+          <p className="sub-title lead-icon"><span />농촌 돌봄 농장</p>
           <p className="sub-sub-title">발달 장애인 가족과 함께 하는 행복 농장 · 기쁨 농장 프로그램</p>
           <p className="sub-contents">
             따뜻한 사랑과 배려가 필요한 발달장애인 가족을 위한 행복농장과 기쁨농장 프로그램입니다.

@@ -24,7 +24,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "start": "react-scripts start",
+    "comment": "클라이언트와 서버 같이 실행",
+    "start2": "concurrently \"npm run client\" \"npm run server\"",
     "client": "react-scripts start",
     "server": "cd ./server && npm run start",
     "test": "react-scripts test",
@@ -68,3 +70,6 @@
   "homepage": "https://제때.com",
   "proxy": "https://openapi.naver.com"
 }
+
+
+    

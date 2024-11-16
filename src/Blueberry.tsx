@@ -101,8 +101,8 @@ const Blueberry = () => {
               <div><img alt="블루베리 농장 전경_10" src={farm10Img}></img><p>사진 촬영</p></div>
             </div>
             <div className="normal-wrap half-and-half">
-              <div><img alt="블루베리 농장 전경_11" src={farm11Img}></img></div>
-              <div><img alt="블루베리 농장 전경_12" src={farm12Img}></img></div>
+              <div><img alt="블루베리 농장 전경_11" src={farm11Img}></img><p className="mw-tag hide">가족단위 체험</p></div>
+              <div><img alt="블루베리 농장 전경_12" src={farm12Img}></img><p className="mw-tag hide display-block">가족단위 체험</p></div>
             </div>
             <p>가족단위 체험</p>
           </div>
@@ -121,7 +121,7 @@ const Blueberry = () => {
             <div><img alt="3년생 묘목_01" src={seedlings3year02Img}></img><p>3년생 묘목</p></div>
             <div><img alt="4년생 묘목" src={seedlings4yearImg}></img><p>4년생 묘목</p></div>
           </div>
-          <div className="notice-wrap"><p className="notice-title">※ 블루베리 체험 및 묘목 분양 문의처 : 제때협동조합 010-7769-3192</p></div>
+          <div className="notice-wrap"><p className="notice-title">※ 블루베리 체험 및 묘목 분양 문의처 : <br className="mw-tag hide"/>제때협동조합 010-7769-3192</p></div>
         </div>
       </div>
     </main>
