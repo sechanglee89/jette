@@ -29,6 +29,14 @@ body {
   display: none;
 }
 
+.pc-tag {
+  display: inherit;
+}
+
+main.caring .mountain-wrap img.mw-tag.hide {
+  display: none;
+}
+
 .display-block {
   display: block !important;
 }
@@ -897,6 +905,10 @@ header.is-active > div > div.burger-sticks {
 /* 모바일 + 태블릿 800px 기준 */
 @media (max-width: 800px) {
 
+  .pc-tag.hide {
+    display: none;
+  }
+
   .mw-tag {
     display: inherit;
   }
@@ -1188,10 +1200,6 @@ header.is-active > div > div.burger-sticks {
   }
 
   main.caring .main-body {
-    padding: 40px 24px 80px 24px;
-  }
-
-  main.caring .main-body .padding-wrap {
     padding: unset;
   }
 
@@ -1218,6 +1226,7 @@ header.is-active > div > div.burger-sticks {
   }
 
   .sub-title.lead-icon > span::before {
+    background-image: url("./images/mw/lead_icon.png");
     background-size: 36px 36px;
     width: 36px;
     height: 36px;
@@ -1361,7 +1370,88 @@ header.is-active > div > div.burger-sticks {
     order: 7;
   }
 
-  .notice-wrap > p.notice-title {
+  .caring .masonry-wrap > div:last-child {
+    margin-bottom: unset;
+  }
+
+  .caring .masonry-wrap > div:nth-child(2) {
+    order: 3;
+  }
+
+  .caring .masonry-wrap > div:nth-child(3) {
+    order: 2;
+  }
+
+  .notice-wrap > p.notice-title,
+  .left-title-wrap > div > span {
     font-size: 18px;
+  }
+
+  .caring .table-wrap {
+    margin-top: 40px;
+  }
+
+  .caring .table-wrap + div,
+  .caring .sub-contents + .table-wrap,
+  .sub-title + .left-title-wrap {
+    margin-top: 24px;
+  }
+
+  .caring-farm-top-wrap .notice-wrap {
+    margin-top: 8px;
+  }
+
+  .caring-farm-top-wrap .notice-wrap > p.notice-title,
+  .left-title-wrap > div > span:last-child {
+    font-size: 16px;
+  }
+
+  .table-wrap .table-box.four-box {
+    gap: 16px;
+  }
+
+  .caring .caring-farm-bottom-wrap .table-wrap {
+    padding: 40px 16px 0 16px;
+  }
+
+
+  .caring .table-wrap + div.farming-introduction-wrap {
+    margin-top: unset;
+    padding: 80px 24px;
+    background-image: url("./images/mw/cloud.png");
+    background-position-y: 362px;
+  }
+
+  .left-title-wrap > div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-title-wrap > div + div {
+    margin-top: 24px;
+  }
+
+  .left-title-wrap > div > span:last-child {
+    margin-top: 8px;;
+  }
+
+  .left-title-wrap > div > span > span {
+    display: block;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  main.caring .mountain-wrap img.pc-tag.hide {
+    display: none;
+  }
+
+  main.caring .mountain-wrap img.mw-tag.hide {
+    display: inherit;
+    border-radius: unset;
+  }
+
+  .mountain-wrap {
+    padding-top: 125px;
+    margin: 0 -24px;
   }
 }

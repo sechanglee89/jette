@@ -12,6 +12,7 @@ import caring10Img from './images/caring/caring_10.png';
 import caring11Img from './images/caring/caring_11.png';
 import caring12Img from './images/caring/caring_12.png';
 import mountainImg from './images/caring/mountain.png';
+import mwMountainImg from './images/mw/mountain.png';
 
 const Caring = () => {
   return (
@@ -32,8 +33,8 @@ const Caring = () => {
           <p className="sub-title lead-icon"><span />농촌 돌봄 농장</p>
           <p className="sub-sub-title">발달 장애인 가족과 함께 하는 행복 농장 · 기쁨 농장 프로그램</p>
           <p className="sub-contents">
-            따뜻한 사랑과 배려가 필요한 발달장애인 가족을 위한 행복농장과 기쁨농장 프로그램입니다.
-            행복농장과 기쁨농장 프로그램은 <span className="highlight">계절 · 절기에 맞는 농장 활동을 통해 스트레스 해소 및 재충전의 기회 제공, 신체적 · 정식적 건강증진, 상호교류를 통한 유대관계 구축과 사회성 향상을 목표로 합니다.</span>
+            따뜻한 사랑과 배려가 필요한 발달장애인 가족을 위한 행복농장과 기쁨농장 프로그램입니다.<br className="mw-tag hide" /><br className="mw-tag hide" />
+            행복농장과 기쁨농장 프로그램은 <span className="highlight">계절 · 절기에 맞는 농장 활동을 통해 스트레스 해소 및 재충전의 기회 제공, 신체적 · 정식적 건강증진, 상호교류를 통한 유대관계 구축과 사회성 향상을 목표로 합니다.</span><br className="mw-tag hide" /><br className="mw-tag hide" />
             자연과 함께 힐링과 치유, 행복과 기쁨으로 가득 채워지는 순간 들을 선사합니다.
           </p>
           <div className="notice-wrap"><p className="notice-title">※ 재료비, 식비 등 모든 비용 무료 제공</p></div>
@@ -92,9 +93,9 @@ const Caring = () => {
                 <p className="table-sub-title">주요 활동 내용</p>
                 <p className="table-sub-contents">
                   <ul>
-                    <li><p>건강체조, 황톳길 산책</p></li>
-                    <li><p>블루베리 재배 및 수확 · 가공 체험</p></li>
-                    <li><p>텃밭 채소 재배, 아로니아/다래 수확 체험</p></li>
+                    <li>건강체조, 황톳길 산책</li>
+                    <li>블루베리 재배 및 수확 · 가공 체험</li>
+                    <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
                   </ul>
                 </p>
               </div>
@@ -114,9 +115,9 @@ const Caring = () => {
           <div className="padding-wrap">
             <p className="sub-sub-title">도시와 농촌의 독거 어르신들이 함께하는 건강 농장 프로그램</p>
             <p className="sub-contents">
-              도시와 농촌의 독거노인들이 농장에서 만나 활동을 함께하면서 건강을 챙길 수 있는 프로그램입니다. 
+              도시와 농촌의 독거노인들이 농장에서 만나 활동을 함께하면서 건강을 챙길 수 있는 프로그램입니다.<br className="mw-tag hide" /><br className="mw-tag hide" />
               활동지원사가 도시와 농촌의 독거 어르신들을 농장으로 직접 모셔 와 <span className="highlight">황톳길 산책, 계절 · 절기에 맞는 농장 활동</span> 등을 함께 하고,
-              이를 통해 <span className="highlight">고독감과 스트레스 해소, 휴식과 힐링, 사회성 회복 등 건강한 삶 유지를 목표</span>로 합니다. 자연과 함께 힐링과 치유,
+              이를 통해 <span className="highlight">고독감과 스트레스 해소, 휴식과 힐링, 사회성 회복 등 건강한 삶 유지를 목표</span>로 합니다.<br className="mw-tag hide" /><br className="mw-tag hide" /> 자연과 함께 힐링과 치유,
               대화와 소통, 즐거움으로 가득 채워지는 순간 들을 선사합니다.텃밭채소 재배 등의 소일거리를 통해 건강하고 활기찬 삶을 즐겨보세요.
             </p>
             <div className="table-wrap">
@@ -164,7 +165,7 @@ const Caring = () => {
               <div>
                 <p className="table-sub-title">체험 내용</p>
                 <p className="table-sub-contents">
-                  주간보호센터 소속 장애인들과 함께 농장활동을 하는 프로그램<br/>
+                  주간보호센터 소속 장애인들과 함께 <br className="mw-tag hide" />농장활동을 하는 프로그램<br/>
                   (2025년 운영 예정, 5명 내외)
                 </p>
               </div>
@@ -177,24 +178,25 @@ const Caring = () => {
                 <div>
                   <span>사회적 농업이란?</span>
                   <span>
-                    농업을 통하여 취약계층 등에 돌봄, 치유, 교육 및 고용등의 서비스를 제공합니다.<br/>
-                    (취약계층 : 장애인, 고령자, 아동, 약물중독자, 다문화가족, 저소득층 등)
+                    농업을 통하여 취약계층 등에 돌봄, 치유,<br className="mw-tag hide" /> 교육 및 고용등의 서비스를 제공합니다.<br/>
+                    <span>(취약계층 : 장애인, 고령자, 아동, 약물중독자,<br className="mw-tag hide" /> 다문화가족, 저소득층 등)</span>
                   </span>
                 </div>
                 <div>
                   <span>사회적 농장이란?</span>
-                  <span>사회적 농업을 실천하는 법인 또는 단체로서 지정받은 농장을 말합니다.</span>
+                  <span>사회적 농업을 실천하는 법인 또는 단체로서<br className="mw-tag hide" /> 지정받은 농장을 말합니다.</span>
                 </div>
                 <div>
                   <span>농촌돌봄농장이란?</span>
-                  <span>사회적 농업을 실천하고 있는 농촌지역 소재 법인 또는 단체를 말합니다.</span>
+                  <span>사회적 농업을 실천하고 있는 농촌지역<br className="mw-tag hide" /> 소재 법인 또는 단체를 말합니다.</span>
                 </div>
               </div>
               <div className="mountain-wrap">
-                <img alt="산" src={mountainImg} />
+                <img alt="산" src={mountainImg} className="pc-tag hide" />
+                <img alt="산" src={mwMountainImg} className="mw-tag hide" />
               </div>
             </div>
-            <div className="notice-wrap"><p className="notice-title">※ 농촌 돌봄 농장 참여 문의처 : 제때협동조합 010-7769-3192</p></div>
+            <div className="notice-wrap"><p className="notice-title">※ 농촌 돌봄 농장 참여 문의처 : <br className="mw-tag hide"/>제때협동조합 010-7769-3192</p></div>
           </div>
         </div>
       </div>

@@ -35,8 +35,8 @@ const Blueberry = () => {
         <div className="blueberry-farm-wrap padding-wrap">
           <p className="sub-title lead-icon"><span />블루베리 농장</p>
           <p className="sub-contents">
-            <span className="highlight">식물터널, 황톳길, 원두막, 연못 등 잘 꾸며진 정원형 농장</span>에 다양한 품종의 블루베리를 친환경 재배하고 있으며,<br/>
-            일교차가 크고 농업용수가 아닌 <span className="highlight">지하 암반수를 활용하여 싱싱하고 맛 좋은 블루베리를 생산</span>하고 있습니다.<br/>
+            <span className="highlight">식물터널, 황톳길, 원두막, 연못 등 잘 꾸며진 정원형 농장</span>에 다양한 품종의 블루베리를 친환경 재배하고 있으며,<br className="pc-tag hide" />
+            일교차가 크고 농업용수가 아닌 <span className="highlight">지하 암반수를 활용하여 싱싱하고 맛 좋은 블루베리를 생산</span>하고 있습니다.<br/><br className="mw-tag hide" />
             특히 세종, 대전, 공주에서 자동차로 15분 거리에 위치하여 접근성이 매우 좋은 곳입니다.<br/>
           </p>
           <img alt="블루베리 농장 전경" src={farm00Img}></img>
