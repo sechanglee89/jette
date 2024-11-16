@@ -1,21 +1,21 @@
-import farm00Img from './images/farm/farm_00.png';
-import farm01Img from './images/farm/farm_01.png';
-import farm02Img from './images/farm/farm_02.png';
-import farm03Img from './images/farm/farm_03.png';
-import farm04Img from './images/farm/farm_04.png';
-import farm05Img from './images/farm/farm_05.png';
-import farm06Img from './images/farm/farm_06.png';
-import farm07Img from './images/farm/farm_07.png';
-import farm08Img from './images/farm/farm_08.png';
-import farm09Img from './images/farm/farm_09.png';
-import farm10Img from './images/farm/farm_10.png';
-import farm11Img from './images/farm/farm_11.png';
-import farm12Img from './images/farm/farm_12.png';
+import farm00Img from './images/farm/farm_00.jpg';
+import farm01Img from './images/farm/farm_01.jpg';
+import farm02Img from './images/farm/farm_02.jpg';
+import farm03Img from './images/farm/farm_03.jpg';
+import farm04Img from './images/farm/farm_04.jpg';
+import farm05Img from './images/farm/farm_05.jpg';
+import farm06Img from './images/farm/farm_06.jpg';
+import farm07Img from './images/farm/farm_07.jpg';
+import farm08Img from './images/farm/farm_08.jpg';
+import farm09Img from './images/farm/farm_09.jpg';
+import farm10Img from './images/farm/farm_10.jpg';
+import farm11Img from './images/farm/farm_11.jpg';
+import farm12Img from './images/farm/farm_12.jpg';
 
-import seedlings2yearImg from './images/farm/seedlings_2year.png';
-import seedlings3year01Img from './images/farm/seedlings_3year_01.png';
-import seedlings3year02Img from './images/farm/seedlings_3year_02.png';
-import seedlings4yearImg from './images/farm/seedlings_4year.png';
+import seedlings2yearImg from './images/farm/seedlings_2year.jpg';
+import seedlings3year01Img from './images/farm/seedlings_3year_01.jpg';
+import seedlings3year02Img from './images/farm/seedlings_3year_02.jpg';
+import seedlings4yearImg from './images/farm/seedlings_4year.jpg';
 
 const Blueberry = () => {
   return (
@@ -102,7 +102,7 @@ const Blueberry = () => {
             </div>
             <div className="normal-wrap half-and-half">
               <div><img alt="블루베리 농장 전경_11" src={farm11Img}></img><p className="mw-tag hide">가족단위 체험</p></div>
-              <div><img alt="블루베리 농장 전경_12" src={farm12Img}></img><p className="mw-tag hide display-block">가족단위 체험</p></div>
+              <div><img alt="블루베리 농장 전경_12" src={farm12Img}></img><p className="mw-tag hide">가족단위 체험</p></div>
             </div>
             <p>가족단위 체험</p>
           </div>

@@ -262,6 +262,7 @@ main.caring .main-body img {
   display: block;
   border-radius: 16px;
   width: 100%;
+  object-fit: cover;
 }
 
 main .main-body .padding-wrap {
@@ -707,6 +708,20 @@ img + .sub-title {
   border-radius: 10px;
   overflow: hidden;
   flex-direction: column;
+}
+
+.blueberry-experience-wrap .masonry-wrap > div > img,
+.blueberry-experience-wrap .normal-wrap > div > img,
+.blueberry-seedlings-sale-wrap .normal-wrap > div > img,
+.caring-farm-top-wrap .masonry-wrap > div > img,
+.caring-farm-middle-wrap .masonry-wrap > div > img,
+.caring-farm-bottom-wrap .masonry-wrap > div > img {
+  height: 500px;
+}
+
+.blueberry-experience-wrap .masonry-wrap > div:nth-child(1) > img,
+.blueberry-experience-wrap .masonry-wrap > div:nth-child(5) > img {
+  height: 800px;
 }
 
 .green-wrap {
@@ -1314,6 +1329,7 @@ header.is-active > div > div.burger-sticks {
   .blueberry-experience-wrap > div > div > div > p, 
   .blueberry-seedlings-sale-wrap .normal-wrap p, 
   .masonry-wrap p {
+    display: block;
     margin-top: 12px;
     text-align: center;
     font-size: 15px;
@@ -1453,5 +1469,19 @@ header.is-active > div > div.burger-sticks {
   .mountain-wrap {
     padding-top: 125px;
     margin: 0 -24px;
+  }
+
+  .blueberry-experience-wrap .masonry-wrap > div > img,
+  .blueberry-experience-wrap .normal-wrap > div > img,
+  .blueberry-seedlings-sale-wrap .normal-wrap > div > img,
+  .caring-farm-top-wrap .masonry-wrap > div > img,
+  .caring-farm-middle-wrap .masonry-wrap > div > img,
+  .caring-farm-bottom-wrap .masonry-wrap > div > img {
+    height: unset;
+  }
+
+  .blueberry-experience-wrap .masonry-wrap > div:nth-child(1) > img,
+  .blueberry-experience-wrap .masonry-wrap > div:nth-child(5) > img {
+    height: unset;
   }
 }
