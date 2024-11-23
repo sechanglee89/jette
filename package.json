@@ -67,8 +67,7 @@
     "type": "git",
     "url": "git@github.com:sechanglee89/jette.git"
   },
-  "homepage": "https://제때.com",
-  "proxy": "https://openapi.naver.com"
+  "homepage": "https://제때.com"
 }
 
 

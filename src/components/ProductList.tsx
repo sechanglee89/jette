@@ -1,7 +1,6 @@
 import axios from "axios"; 
 import { useState, useEffect } from "react"; 
 import Pagination from "react-js-pagination";
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 interface SearchResultBody {
@@ -30,24 +29,17 @@ const ProductList = (props: ProductListProps) => {
 
 	useEffect(() => {
 			const productListData = async () => {
-				// const URL = "http://localhost:5000/api/products";
-			const URL = "https://cors-anywhere.herokuapp.com/https://openapi.naver.com/v1/search/shop.json";
-			const ClientID = 'HAwV_5i2xat1aadc3L3F';
-			const ClientSecret = '_Zn3cYp2OX';
+			const URL = "https://empirical-canidae-sechanglee-afaaa098.koyeb.app/api/products";
 
 			console.log("call productListData limit : ", props.limit + ", currentPage : ", props.currentPage)
 
 			try {
 				const res = await axios.get(URL, {
 					params: {
-					  query: "프로랑스&mall=7883144",
+						query: "프로랑스&mall=7883144",
 						display: props.limit,
 						start: (currentPage - 1) * props.limit + 1, // 시작 페이지 계산
 						sort: "date"
-					},
-					headers: {
-						'X-Naver-Client-Id': ClientID,
-						'X-Naver-Client-Secret': ClientSecret
 					}
 				});
 				setData(res.data || null);
@@ -65,32 +57,18 @@ const ProductList = (props: ProductListProps) => {
 	};
 
 	// type에 따른 응답 분기 처리
-	if (props.type === "SWIPER") {
+	if (props.type === "FIX") {
 		return <>
-			{/*슬라이드 영역 기본 노출 2개 반
-			네이버 스토어 API 조회하여 상품 유동적으로 처리 */}
-			<Swiper
-				slidesPerView={"auto"}
-				spaceBetween={40}
-				grabCursor={true}
-				pagination={{ clickable: true }}
-				scrollbar={{ draggable: true }}
-				style={{ width: '100%', height: '404px' }}
-			>
-
 			{data && data.total > 0 ? ( // null 체크 추가
 				data.items.map((product) => (
-					<SwiperSlide key={product.productId}>
-						<a rel="noreferrer" href={product.link} target="_blank">
-							<img alt={product.title} src={product.image} />
-							<p dangerouslySetInnerHTML={{__html: product.title}}></p>
-						</a>
-					</SwiperSlide>
+					<a key={product.productId} rel="noreferrer" href={product.link} target="_blank">
+						<img alt={product.title} src={product.image} />
+						<p dangerouslySetInnerHTML={{__html: product.title}}></p>
+					</a>
 				))
 			) : (
 				""
 			)}
-			</Swiper>
 		</>;
 	} else {
 		return <>

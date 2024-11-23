@@ -22,7 +22,7 @@ html {
 body {
   font-family: 'Pretendard';
   font-style: normal;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .hide {
@@ -48,13 +48,15 @@ main.caring .mountain-wrap img.mw-tag.hide {
 
 button {
   box-sizing: border-box;
-  width: 145px;
-  height: 50px;
+  width: 164px;
+  height: 56px;
   background: rgba(34, 34, 34, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 16px;
+  font-family: 'Pretendard';
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 600;
   animation: zoom-in;
 }
 
@@ -71,7 +73,7 @@ button,
 .product-list-wrap img,
 header .mw-header-wrap,
 main .contents .box-wrap > div,
-main .product-wrap .right-wrap .title-wrap img {
+main .product-wrap div.product-wrap-list img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -92,7 +94,8 @@ header {
 
 header > div {
   display: flex;
-  background: rgba(255, 255, 255, 0.7);
+  justify-content: center;
+  background: #FFF;
   border-radius: 24px;
   padding: 0 50px;
   height: 80px;
@@ -117,7 +120,6 @@ header .text-wrap {
   justify-content: flex-end;
   width: 100%;
   color: #222222;
-  font-size: 16px;
   font-weight: 600;
 }
 
@@ -295,11 +297,11 @@ main .top-wrap .main-text-wrap {
 main .top-wrap .main-text-wrap .title {
   color: #FFFFFF;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 36px;
 }
 
 main .top-wrap .main-text-wrap .title + p {
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 main .top-wrap .main-text-wrap p + p {
@@ -307,7 +309,7 @@ main .top-wrap .main-text-wrap p + p {
 }
 
 main .top-wrap .main-text-wrap p + button {
-  margin-top: 60px;
+  margin-top: 28.5px;
 }
 
 main .about-wrap {
@@ -327,81 +329,58 @@ main .about-wrap .caring-wrap {
   background-position: center;
 }
 
+main .about-wrap .green-color-title + p {
+  font-size: 30px;
+}
+
 main .product-wrap {
   display: flex;
-  height: 750px;
-}
-
-main .product-wrap .left-wrap {
-  width: 40%;
-  height: 100%;
-  background-image: url("./images/main_product.png");
-  padding-right: 140px;
-  display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
+  padding: 100px 0;
 }
 
-main .product-wrap .left-wrap .text-wrap {
-  height: 246px;
-  border-radius: 0px 24px 24px 0px;
-  background: rgba(255, 255, 255, 0.85);
-  margin-bottom: 70px;
-}
-
-main .product-wrap .left-wrap .text-wrap > div {
+main .product-wrap > div {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  padding-left: 40px;
-  padding-right: calc(100% - 570px);
+  align-items: center;
+  font-size: 30px;
 }
 
-main .product-wrap .left-wrap .text-wrap .title {
+main .product-wrap > div .sub-title {
   font-size: 40px;
   font-weight: 700;
 }
 
-main .product-wrap .left-wrap .text-wrap .green-color-title + .title {
-  margin-top: 10px;
+main .product-wrap > div button {
+  background: #DEE9D7;
+  color: #222;
 }
 
-main .product-wrap .left-wrap .text-wrap .title + p {
-  margin-top: 16px;
+main .product-wrap > div > p + p,
+main .product-wrap > div > p + button {
+  margin-top: 24px;
 }
 
-main .product-wrap .left-wrap .text-wrap p:last-child {
-  margin-top: 5px;
+main .product-wrap div.product-wrap-list {
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 1100px;
+  font-size: 24px;
+  gap: 40px;
+  margin-top: 40px;
 }
 
-main .product-wrap .right-wrap {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 60%;
+main .product-wrap div.product-wrap-list img {
+  display: block;
+  width: 100%;
+  border-radius: 40px;
 }
 
-main .product-wrap .right-wrap .title-wrap {
-  float: right;
-  margin-bottom: 20px;
-}
-
-main .product-wrap .right-wrap .title-wrap img {
-  float: right;
-  width: 236px;
-  height: 14px;
-  padding-right: 20px;
-}
-
-main .product-wrap .right-wrap .title-wrap:hover img {
-  padding-right: 0;
-}
-
-main .product-wrap .right-wrap .green-color-title {
-  color: #6F8F5B;
-  font-size: 16px;
-  width: 256px;
+main .product-wrap div.product-wrap-list p {
+  margin-top: 24px;
 }
 
 .swiper {
@@ -429,7 +408,8 @@ main.home .product-list-wrap {
   border-radius: 40px;
 }
 
-.product-list-wrap img:hover {
+.product-list-wrap img:hover,
+main .product-wrap div.product-wrap-list img:hover {
   border-radius: 100px;
 }
 
@@ -932,13 +912,6 @@ header.is-active > div > div.burger-sticks {
     padding: 0 16px;
   }
 
-  header > div {
-    justify-content: center;
-    height: 48px;
-    padding: 0 16px;
-    border-radius: 16px;
-  }
-
   header .pc-header-wrap {
     display: none;
   }
@@ -1007,10 +980,6 @@ header.is-active > div > div.burger-sticks {
 
   main .main-body .blueberry-seedlings-sale-wrap.padding-wrap {
     padding-bottom: 80px;
-  }
-
-  main .product-wrap .left-wrap {
-    padding-right: unset;
   }
 
   footer > div {
@@ -1123,10 +1092,6 @@ header.is-active > div > div.burger-sticks {
     line-height: 130%;
   }
 
-  main .contents div p + p {
-    margin-top: 16px;
-  }
-
   main .contents > div + div {
     margin-top: 80px;
   }
@@ -1152,49 +1117,8 @@ header.is-active > div > div.burger-sticks {
     flex-direction: column;
   }
   
-  main .product-wrap .left-wrap {
-    width: 100%;
-    height: 100vh;
-  }
-
-  main .product-wrap .right-wrap {
-    width: 100%;
-  }
-
   main.home .product-list-wrap {
     padding: 80px 0 80px 16px;
-  }
-
-  main .product-wrap .left-wrap .text-wrap {
-    margin-bottom: 40px;
-    height: 150px;
-    margin-right: 50px;
-  }
-
-  main .product-wrap .left-wrap .text-wrap .title {
-    font-size: 20px;
-  }
-
-  main .product-wrap .left-wrap .text-wrap .green-color-title + .title {
-    margin-top: 4px;
-  }
-
-  main .product-wrap .left-wrap .text-wrap .title + p {
-    margin-top: 8px;
-  }
-
-  main .product-wrap .right-wrap .title-wrap img {
-    width: 185px;
-    padding-right: 16px;
-  }
-
-  main .product-wrap .right-wrap .green-color-title {
-    width: 201px;
-  }
-
-  main .product-wrap .right-wrap .title-wrap {
-    margin-top: 80px;
-    margin-bottom: 24px;
   }
 
   .product-list-wrap img + p {

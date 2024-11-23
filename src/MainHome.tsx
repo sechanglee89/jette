@@ -1,12 +1,11 @@
-import longArrowRight from './images/long_arrow_right.png';
 import ProductList from './components/ProductList';
 import { useNavigate } from 'react-router-dom';
 
 const Main = () => {
   const ProductListProps = {
-    limit: 10,
+    limit: 3,
     currentPage: 1,
-    type: "SWIPER"
+    type: "FIX"
   };
   
   const navigate = useNavigate(); // navigate 훅을 사용하여 페이지 이동
@@ -54,29 +53,12 @@ const Main = () => {
         </div>
       </div>
       <div className="product-wrap">
-        <div className="left-wrap">
-          <div className="text-wrap">
-            <div>
-              <p className="green-color-title">Product</p>
-              <p className="title">신선함이 살아있는 선택</p>
-              <p>기름 없이 열과 압력으로</p>
-              <p>구워 만들어 바삭하고 고소해요</p>
-            </div>
-          </div>
+        <div>
+          <p className="sub-title">제때 쇼핑몰</p>
+          <p>기름 없이 열과 압력으로 구워 만들어 바삭하고 고소해요</p>
+          <button onClick={goShopPage}>자세히 보기</button>
         </div>
-        <div className="right-wrap">
-          <div>
-            <div className="title-wrap">
-              <a href="/" onClick={goShopPage}>
-                <p className="green-color-title">제때 만든 먹거리 더보기</p>
-                <img alt="오른쪽 긴 화살표" src={longArrowRight} />
-              </a>
-            </div>
-            <div className="product-list-wrap">
-              <ProductList {...ProductListProps}/>
-            </div>
-          </div>
-        </div>
+        <div className="product-wrap-list"><ProductList {...ProductListProps}/></div>
       </div>
     </main>
   )
