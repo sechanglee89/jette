@@ -291,7 +291,7 @@ main .top-wrap .main-text-wrap {
   color: rgba(255, 255, 255, 0.8);
   text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
   font-weight: 400;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 main .top-wrap .main-text-wrap .title {
@@ -305,7 +305,7 @@ main .top-wrap .main-text-wrap .title + p {
 }
 
 main .top-wrap .main-text-wrap p + p {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 main .top-wrap .main-text-wrap p + button {
@@ -489,7 +489,7 @@ ul.pagination li a:hover, ul.pagination li a.active {
 
 .sub-title {
   color: #222;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 600;
   text-align: center;
 }
@@ -510,13 +510,10 @@ ul.pagination li a:hover, ul.pagination li a.active {
   height: 40px;
 }
 
-.sub-title + .sub-contents {
-  margin-top: 36px;
-}
-
+.sub-title + .sub-contents,
 .sub-title.lead-icon + .sub-contents,
 .sub-title.lead-icon + .sub-sub-title {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .sub-title.lead-icon + .sub-contents li::marker {
@@ -536,7 +533,7 @@ ul.pagination li a:hover, ul.pagination li a.active {
 .sub-contents {
   color: #222;
   font-family: "Noto Sans CJK KR";
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 150%; /* 36px */
 }
@@ -557,7 +554,7 @@ ul.pagination li a:hover, ul.pagination li a.active {
 
 .sub-contents + img,
 .notice-wrap + img {
-  margin-top: 36px;
+  margin-top: 40px;
 }
 
 img + .sub-title {
@@ -657,8 +654,12 @@ img + .sub-title {
 
 .normal-wrap {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.normal-wrap:last-child {
+  margin-bottom: unset;
 }
 
 .normal-wrap > div:first-child {
@@ -678,13 +679,13 @@ img + .sub-title {
 
 .masonry-wrap {
   column-count: 2;
-  column-gap: 1em;
+  column-gap: 30px;
 }
 
 .masonry-wrap > div {
   display: inline-flex;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 30px;
   border-radius: 10px;
   overflow: hidden;
   flex-direction: column;
@@ -736,18 +737,6 @@ img + .sub-title {
   line-height: 150%; /* 27px */
 }
 
-.blueberry-experience-wrap p::before,
-.masonry-wrap p::before {
-  content: "";
-  display: inline-block;
-  background-image: url("images/icon/short_arrow_up.png");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  margin-right: 4px;
-  vertical-align: sub;
-}
-
 .blueberry-seedlings-sale-wrap .normal-wrap {
   display: flex;
   justify-content: space-between;
@@ -757,10 +746,15 @@ img + .sub-title {
   margin-bottom: 64px;
 }
 
-.blueberry-experience-wrap > div > div > div > p,
-.blueberry-seedlings-sale-wrap .normal-wrap p,
-.masonry-wrap p {
+
+.blueberry-seedlings-sale-wrap .normal-wrap p {
   margin-top: 16px;
+}
+
+.blueberry-experience-wrap > div > div > div > p,
+.masonry-wrap p {
+  margin-top: 12px;
+  text-align: center;
 }
 
 .blueberry-seedlings-sale-wrap .normal-wrap > div {
