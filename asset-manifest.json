@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.691a0a1d.css",
-    "main.js": "/static/js/main.39496d62.js",
+    "main.css": "/static/css/main.34cc106f.css",
+    "main.js": "/static/js/main.43846057.js",
     "static/media/farm_11.jpg": "/static/media/farm_11.9bca988ef3a76445bf12.jpg",
     "static/media/farm_01.jpg": "/static/media/farm_01.d3a5994870d08b97c594.jpg",
     "static/media/farm_00.jpg": "/static/media/farm_00.8ce18791cd52911c1ea6.jpg",
-    "static/media/main_banner.png": "/static/media/main_banner.bf8d420e1f9c6c4fe44d.png",
     "static/media/Pretendard-Regular.ttf": "/static/media/Pretendard-Regular.fbe5b096111efa3e3bc2.ttf",
     "static/media/seedlings_4year.jpg": "/static/media/seedlings_4year.65b83ad8861a7baf60cb.jpg",
     "static/media/caringMain.png": "/static/media/caringMain.13f95d97321311a829ff.png",
-    "static/media/blueberry_banner.png": "/static/media/blueberry_banner.17a318f65b4e6805b5f1.png",
     "static/media/caring_banner.png": "/static/media/caring_banner.121d671bce4661a093b7.png",
     "static/media/caring_05.jpg": "/static/media/caring_05.75ed7dd4c758162b9a25.jpg",
     "static/media/farm_09.jpg": "/static/media/farm_09.8a1b54ce17d69d2a8456.jpg",
@@ -17,6 +15,7 @@
     "static/media/caring_09.jpg": "/static/media/caring_09.82febae6d129431e8c25.jpg",
     "static/media/caring_04.jpg": "/static/media/caring_04.0281be40725602b50f9a.jpg",
     "static/media/farm_05.jpg": "/static/media/farm_05.006c101049af44996fca.jpg",
+    "static/media/main_banner.jpg": "/static/media/main_banner.3fb0d2ca5f9da115e25d.jpg",
     "static/media/caring_07.jpg": "/static/media/caring_07.d822757cb278d3045fd2.jpg",
     "static/media/Pretendard-Regular.otf": "/static/media/Pretendard-Regular.57ca7a4b20797e3b9625.otf",
     "static/media/caring_06.jpg": "/static/media/caring_06.d7cb48e7e29dce3cbaf0.jpg",
@@ -24,7 +23,6 @@
     "static/media/caring_10.jpg": "/static/media/caring_10.7febc8b48544ca5e26f6.jpg",
     "static/media/caring_11.jpg": "/static/media/caring_11.94f826ad4024953f2284.jpg",
     "static/media/farm_08.jpg": "/static/media/farm_08.cfdd5defbaa51cfc23ff.jpg",
-    "static/media/main_product.png": "/static/media/main_product.3d6269e58f10c7d58e89.png",
     "static/media/seedlings_2year.jpg": "/static/media/seedlings_2year.e45470c57d5542a17f33.jpg",
     "static/media/farm_07.jpg": "/static/media/farm_07.beeedf5ac2689db49e3a.jpg",
     "static/media/caring_02.jpg": "/static/media/caring_02.63a7a3135732e9e28976.jpg",
@@ -33,6 +31,7 @@
     "static/media/caring_01.jpg": "/static/media/caring_01.3f7ce74f41fa03027ece.jpg",
     "static/media/farm_03.jpg": "/static/media/farm_03.24169b2f7b0355bba4c8.jpg",
     "static/media/farm_12.jpg": "/static/media/farm_12.a8b29f639acb21bc9979.jpg",
+    "static/media/blueberry_banner.jpg": "/static/media/blueberry_banner.35716554b414943b8597.jpg",
     "static/media/shop_banner.png": "/static/media/shop_banner.dd2cca17fb2dc8c79ddb.png",
     "static/media/farm_10.jpg": "/static/media/farm_10.175accac3243cb5a1344.jpg",
     "static/media/seedlings_3year_01.jpg": "/static/media/seedlings_3year_01.74b66b5fd3e85739d747.jpg",
@@ -41,18 +40,15 @@
     "static/media/caring_08.jpg": "/static/media/caring_08.196919ab6df3567b37b4.jpg",
     "static/media/seedlings_3year_02.jpg": "/static/media/seedlings_3year_02.a841b9c2df5923c8084c.jpg",
     "static/media/Pretendard-Regular.woff2": "/static/media/Pretendard-Regular.38bed7de46e7b9049ced.woff2",
-    "static/media/caring.png": "/static/media/caring.487be3b85c13e509bd4f.png",
-    "static/media/blueberry.png": "/static/media/blueberry.fa113e342e55a2941aec.png",
-    "static/media/cloud.png": "/static/media/cloud.f9505bbc2c4a8cb4caf9.png",
-    "static/media/mountain.png": "/static/media/mountain.40885ea26de754a4da34.png",
-    "static/media/logo.svg": "/static/media/logo.c936c64b3b78479108e1b7b4959a0a75.svg",
-    "static/media/footer_logo.png": "/static/media/footer_logo.ca1664fce36eeae2d54c.png",
+    "static/media/caring.jpg": "/static/media/caring.334323cfd41d9278c630.jpg",
+    "static/media/blueberry.jpg": "/static/media/blueberry.2a5c3436dfd35f26cf72.jpg",
+    "static/media/logo.png": "/static/media/logo.6c117d9016301387fb2f.png",
     "index.html": "/index.html",
-    "main.691a0a1d.css.map": "/static/css/main.691a0a1d.css.map",
-    "main.39496d62.js.map": "/static/js/main.39496d62.js.map"
+    "main.34cc106f.css.map": "/static/css/main.34cc106f.css.map",
+    "main.43846057.js.map": "/static/js/main.43846057.js.map"
   },
   "entrypoints": [
-    "static/css/main.691a0a1d.css",
-    "static/js/main.39496d62.js"
+    "static/css/main.34cc106f.css",
+    "static/js/main.43846057.js"
   ]
 }
