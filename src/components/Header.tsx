@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from '../images/logo.svg';
+import logo from '../images/logo.png';
 import { useState } from "react";
 
 // const toggleHandler = (_event: any) => {
