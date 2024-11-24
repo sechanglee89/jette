@@ -11,8 +11,6 @@ import caring09Img from './images/caring/caring_09.jpg';
 import caring10Img from './images/caring/caring_10.jpg';
 import caring11Img from './images/caring/caring_11.jpg';
 import caring12Img from './images/caring/caring_12.jpg';
-import mountainImg from './images/caring/mountain.png';
-import mwMountainImg from './images/mw/mountain.png';
 
 const Caring = () => {
   return (
@@ -22,8 +20,7 @@ const Caring = () => {
           <div>
             <p className="green-color-title">Jette story</p>
             <p className="title">농촌 돌봄 농장</p>
-            <p>계절에 따라 형형색색의 옷으로 갈아입는 농장의</p>
-            <p>아름다움을 즐겨보세요</p>
+            <p>계절에 따라 형형색색의 옷으로 갈아입는 농장의<br/>아름다움을 즐겨보세요</p>
           </div>
         </div>
       </div>
@@ -41,28 +38,26 @@ const Caring = () => {
           <img alt="돌봄 농장 메인" src={caringMainImg}></img>
           <div className="table-wrap">
             <div className="table-header">행복 농장 프로그램</div>
-            <div className="table-box four-box">
+            <div className="table-box">
               <div>
-                <p className="table-sub-title">참여자</p>
-                <p className="table-sub-contents">발잘 장애인 4-6명</p>
-              </div>
-              <div>
-                <p className="table-sub-title">시기</p>
-                <p className="table-sub-contents">4월 ~ 11월</p>
-              </div>
-              <div>
-                <p className="table-sub-title">횟수</p>
-                <p className="table-sub-contents">월 1-2회</p>
-              </div>
-              <div className="middle-size">
-                <p className="table-sub-title">주요 활동 내용</p>
-                <p className="table-sub-contents">
-                  <ul>
-                    <li>건강체조, 황톳길 산책</li>
-                    <li>블루베리 재배 및 수확 · 가공 체험</li>
-                    <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
-                  </ul>
-                </p>
+                <div className="table-sub-title">
+                  <p>참여자</p>
+                  <p>시기</p>
+                  <p>횟수</p>
+                  <p>주요 활동 내용</p>
+                </div>
+                <div>
+                    <p>발잘 장애인 및 가족</p>
+                    <p>4월 ~ 11월</p>
+                    <p>월 2회</p>
+                    <p>
+                      <ul className="custom-circle-list">
+                        <li>건강체조, 황톳길 산책</li>
+                        <li>블루베리 재배 및 수확 · 가공 체험</li>
+                        <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                      </ul>
+                    </p>
+                </div>
               </div>
             </div>
           </div>
@@ -76,28 +71,26 @@ const Caring = () => {
           </div>
           <div className="table-wrap">
             <div className="table-header">기쁨 농장 프로그램</div>
-            <div className="table-box four-box">
+            <div className="table-box">
               <div>
-                <p className="table-sub-title">참여자</p>
-                <p className="table-sub-contents">발잘 장애인 4-6명</p>
-              </div>
-              <div>
-                <p className="table-sub-title">시기</p>
-                <p className="table-sub-contents">4월 ~ 11월</p>
-              </div>
-              <div>
-                <p className="table-sub-title">횟수</p>
-                <p className="table-sub-contents">월 1-2회</p>
-              </div>
-              <div className="middle-size">
-                <p className="table-sub-title">주요 활동 내용</p>
-                <p className="table-sub-contents">
-                  <ul>
-                    <li>건강체조, 황톳길 산책</li>
-                    <li>블루베리 재배 및 수확 · 가공 체험</li>
-                    <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
-                  </ul>
-                </p>
+                <div className="table-sub-title">
+                  <p>참여자</p>
+                  <p>시기</p>
+                  <p>횟수</p>
+                  <p>주요 활동 내용</p>
+                </div>
+                <div>
+                    <p>발잘 장애인 및 가족</p>
+                    <p>4월 ~ 11월</p>
+                    <p>월 2회</p>
+                    <p>
+                      <ul className="custom-circle-list">
+                        <li>건강체조, 황톳길 산책</li>
+                        <li>블루베리 재배 및 수확 · 가공 체험</li>
+                        <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                      </ul>
+                    </p>
+                </div>
               </div>
             </div>
           </div>
@@ -121,29 +114,27 @@ const Caring = () => {
               대화와 소통, 즐거움으로 가득 채워지는 순간 들을 선사합니다.텃밭채소 재배 등의 소일거리를 통해 건강하고 활기찬 삶을 즐겨보세요.
             </p>
             <div className="table-wrap">
-              <div className="table-header">기쁨 농장 프로그램</div>
-              <div className="table-box four-box">
+              <div className="table-header">건강 농장 프로그램</div>
+              <div className="table-box">
                 <div>
-                  <p className="table-sub-title">참여자</p>
-                  <p className="table-sub-contents">발잘 장애인 4-6명</p>
-                </div>
-                <div>
-                  <p className="table-sub-title">시기</p>
-                  <p className="table-sub-contents">4월 ~ 11월</p>
-                </div>
-                <div>
-                  <p className="table-sub-title">횟수</p>
-                  <p className="table-sub-contents">월 1-2회</p>
-                </div>
-                <div className="middle-size">
-                  <p className="table-sub-title">주요 활동 내용</p>
-                  <p className="table-sub-contents">
-                    <ul>
-                      <li>건강체조, 황톳길 산책</li>
-                      <li>블루베리 재배 및 수확 · 가공 체험</li>
-                      <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
-                    </ul>
-                  </p>
+                  <div className="table-sub-title">
+                    <p>참여자</p>
+                    <p>시기</p>
+                    <p>횟수</p>
+                    <p>주요 활동 내용</p>
+                  </div>
+                  <div>
+                      <p>독거노인 5명</p>
+                      <p>4월 ~ 11월</p>
+                      <p>월 2회</p>
+                      <p>
+                        <ul className="custom-circle-list">
+                          <li>건강체조, 황톳길 산책</li>
+                          <li>블루베리 재배 및 수확 · 가공 체험</li>
+                          <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                        </ul>
+                      </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -158,42 +149,44 @@ const Caring = () => {
           </div>
         </div>
         {/* 사랑드림 농장 */}
-        <div className="caring-farm-bottom-wrap">
+        <div className="caring-farm-bottom-wrap padding-wrap">
           <div className="table-wrap">
-            <div className="table-header">사랑드림 농장</div>
-            <div className="table-box">
-              <div>
-                <p className="table-sub-title">체험 내용</p>
-                <p className="table-sub-contents">
-                  주간보호센터 소속 장애인들과 함께 <br className="mw-tag hide" />농장활동을 하는 프로그램<br/>
-                  (2025년 운영 예정, 5명 내외)
-                </p>
+            <div className="table-header">사랑드림 농장  프로그램</div>
+              <div className="table-box align-center">
+                <div>
+                  <div className="table-sub-title">
+                    <p>체험 내용</p>
+                  </div>
+                  <div>
+                      <p className="custom-import-text">주간보호센터 소속 발달장애인들과 함께 하는 농업활동 프로그램으로<br/>
+                      2025년부터 운영 예정 (월 2회)</p>
+                  </div>
+                </div>
               </div>
-            </div>
           </div>
           <div className="farming-introduction-wrap">
             <div className="mix-contents">
               <p className="sub-title lead-icon"><span />사회적 농업 소개</p>
               <div className="left-title-wrap">
                 <div>
-                  <span>사회적 농업이란?</span>
-                  <span>
-                    농업을 통하여 취약계층 등에 돌봄, 치유,<br className="mw-tag hide" /> 교육 및 고용등의 서비스를 제공합니다.<br/>
-                    <span>(취약계층 : 장애인, 고령자, 아동, 약물중독자,<br className="mw-tag hide" /> 다문화가족, 저소득층 등)</span>
-                  </span>
-                </div>
-                <div>
-                  <span>사회적 농장이란?</span>
-                  <span>사회적 농업을 실천하는 법인 또는 단체로서<br className="mw-tag hide" /> 지정받은 농장을 말합니다.</span>
-                </div>
-                <div>
-                  <span>농촌돌봄농장이란?</span>
-                  <span>사회적 농업을 실천하고 있는 농촌지역<br className="mw-tag hide" /> 소재 법인 또는 단체를 말합니다.</span>
+                  <div>
+                    <span>사회적 농업</span>
+                    <span>
+                      농업을 통하여 취약계층 등에 돌봄, 치유,<br className="mw-tag hide" /> 교육 및 고용등의 서비스를 제공합니다.<br/>
+                      <span className="add-text-wrap">(취약계층 : 장애인, 고령자, 아동, 약물중독자,<br className="mw-tag hide" /> 다문화가족, 저소득층 등)</span>
+                    </span>
+                  </div>
+                  <div>
+                    <span>사회적 농장</span>
+                    <span>사회적 농업을 실천하는 법인 또는 단체로서<br className="mw-tag hide" /> 지정받은 농장을 말합니다.</span>
+                  </div>
+                  <div>
+                    <span>농촌돌봄농장</span>
+                    <span>사회적 농업을 실천하고 있는 농촌지역<br className="mw-tag hide" /> 소재 법인 또는 단체를 말합니다.</span>
+                  </div>
                 </div>
               </div>
               <div className="mountain-wrap">
-                <img alt="산" src={mountainImg} className="pc-tag hide" />
-                <img alt="산" src={mwMountainImg} className="mw-tag hide" />
               </div>
             </div>
             <div className="notice-wrap"><p className="notice-title">※ 농촌 돌봄 농장 참여 문의처 : <br className="mw-tag hide"/>제때협동조합 010-7769-3192</p></div>

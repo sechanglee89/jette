@@ -25,7 +25,7 @@ const Blueberry = () => {
           <div>
             <p className="green-color-title">Jette story</p>
             <p className="title">블루베리 농장</p>
-            <p>농장에서 직접 딴 싱싱하고 맛있는<br />블루베리를 경험하세요</p>
+            <p>농장에서 직접 딴 싱싱하고 맛있는<br/>블루베리를 경험하세요</p>
           </div>
         </div>
       </div>
@@ -48,10 +48,18 @@ const Blueberry = () => {
             <div className="table-header">단체</div>
             <div className="table-box">
               <div>
-                  <p>대상<span>어린이집, 유치원, 초등학교 1-2학년, 기업체 등</span></p>
-                  <p>인원<span>10~50명 단위</span></p>
-                  <p>시기<span>6월 초순 ~ 7월 하순(평일)</span></p>
-                  <p>비용<span>수확체험 15,000원, 수확 + 가공 체험 30,000원</span></p>
+                <div className="table-sub-title">
+                  <p>대상</p>
+                  <p>인원</p>
+                  <p>시기</p>
+                  <p>비용</p>
+                </div>
+                <div>
+                  <p>어린이집, 유치원, 초등학교 1-2학년, 기업체 등</p>
+                  <p>10~50명 단위</p>
+                  <p>6월 초순 ~ 7월 하순(평일)</p>
+                  <p>수확체험 15,000원, 수확 + 가공 체험 30,000원</p>
+                </div>
               </div>
             </div>
             <div className="table-header">가족 단위</div>
