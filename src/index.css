@@ -1057,7 +1057,7 @@ header.is-active > div > div.burger-sticks {
   }
 
   footer .text-wrap > div {
-    margin: 40px 0;
+    margin-top: 40px;
     font-size: 16px;
     line-height: 130%;
   }
@@ -1103,9 +1103,13 @@ header.is-active > div > div.burger-sticks {
     padding: 12px 24px;
   }
 
+  main .top-wrap {
+    height: 500px;
+  }
+  
   main .top-wrap .main-text-wrap {
     font-size: 20px;
-    padding: 0 36px;
+    padding-top: 80px;
     font-weight: 400;
   }
 
@@ -1208,7 +1212,11 @@ header.is-active > div > div.burger-sticks {
   }
 
   main.shop .main-body {
-    padding: 40px 16px 80px 16px;
+    padding: 40px 16px;
+  }
+
+  main.shop .product-list-wrap img + p {
+    margin-top: 12px;
   }
 
   main.caring .main-body {
@@ -1220,7 +1228,8 @@ header.is-active > div > div.burger-sticks {
   }
 
   .product-main-wrap .product-list-wrap > div {
-    width: calc(100% / 2 - 15px);
+    width: calc(100% / 2 - 4px);
+    margin-bottom: 16px;
   }
 
   .product-list-wrap img,

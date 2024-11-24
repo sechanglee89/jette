@@ -32,7 +32,7 @@ const Shop = () => {
         <div className="main-text-wrap">
           <div>
             <p className="green-color-title">Product</p>
-            <p className="title">제때 먹거리</p>
+            <p className="title">제때 쇼핑몰</p>
             <p>
               신선하고 건강한 먹거리를 제공하여<br className="mw-tag hide" /> 지역 주민의 건강과<br />
               지역 경제 활성화에 기여합니다.
