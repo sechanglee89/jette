@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.34cc106f.css",
-    "main.js": "/static/js/main.43846057.js",
+    "main.css": "/static/css/main.47280fe4.css",
+    "main.js": "/static/js/main.9bbdcccb.js",
     "static/media/farm_11.jpg": "/static/media/farm_11.9bca988ef3a76445bf12.jpg",
     "static/media/farm_01.jpg": "/static/media/farm_01.d3a5994870d08b97c594.jpg",
     "static/media/farm_00.jpg": "/static/media/farm_00.8ce18791cd52911c1ea6.jpg",
@@ -44,11 +44,12 @@
     "static/media/blueberry.jpg": "/static/media/blueberry.2a5c3436dfd35f26cf72.jpg",
     "static/media/logo.png": "/static/media/logo.6c117d9016301387fb2f.png",
     "index.html": "/index.html",
-    "main.34cc106f.css.map": "/static/css/main.34cc106f.css.map",
-    "main.43846057.js.map": "/static/js/main.43846057.js.map"
+    "static/media/lead_icon.svg": "/static/media/lead_icon.5a4a26516090ccf2b821.svg",
+    "main.47280fe4.css.map": "/static/css/main.47280fe4.css.map",
+    "main.9bbdcccb.js.map": "/static/js/main.9bbdcccb.js.map"
   },
   "entrypoints": [
-    "static/css/main.34cc106f.css",
-    "static/js/main.43846057.js"
+    "static/css/main.47280fe4.css",
+    "static/js/main.9bbdcccb.js"
   ]
 }
