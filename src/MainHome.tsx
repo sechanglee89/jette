@@ -7,6 +7,12 @@ const Main = () => {
     currentPage: 1,
     type: "FIX"
   };
+
+  const ProductListSwiperProps = {
+    limit: 10,
+    currentPage: 1,
+    type: "SWIPER"
+  };
   
   const navigate = useNavigate(); // navigate 훅을 사용하여 페이지 이동
 
@@ -38,7 +44,7 @@ const Main = () => {
         <div className="contents">
           <div>
             <p className="green-color-title">About us</p>
-            <p>탐스러운 블루베리와 행복한 미소가 만나는<br className="mw-tag hide" /> 그 순간을 아이들에게 선물하세요.</p>
+            <p>탐스러운 블루베리와<br className="mw-tag hide" /> 행복한 미소가 만나는 그 순간을<br className="mw-tag hide" /> 아이들에게 선물하세요.</p>
           </div>
           <div className="box-wrap">
             <div className="blueberry-wrap">
@@ -55,10 +61,11 @@ const Main = () => {
       <div className="product-wrap">
         <div>
           <p className="sub-title">제때 쇼핑몰</p>
-          <p>기름 없이 열과 압력으로 구워 만들어 바삭하고 고소해요</p>
+          <p>기름 없이 열과 압력으로 구워 만들어<br className="mw-tag hide" /> 바삭하고 고소해요</p>
           <button onClick={goShopPage}>자세히 보기</button>
         </div>
-        <div className="product-wrap-list"><ProductList {...ProductListProps}/></div>
+        <div className="product-wrap-list pc-tag hide"><ProductList {...ProductListProps}/></div>
+        <div className="product-wrap-list mw-tag hide"><ProductList {...ProductListSwiperProps}/></div>
       </div>
     </main>
   )

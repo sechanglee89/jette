@@ -901,14 +901,14 @@ main.caring .masonry-wrap > div:last-child > img {
 header > div > div.burger-sticks {
   position: absolute;
   flex-direction: column;
-  top: 16px;
+  top: 20px;
   gap: 5px;
   right: 0;
   padding-right: 32px;
 }
 
 header.is-active > div > div.burger-sticks {
-  top: 16px;
+  top: 20px;
   transform: unset;
   align-items: unset;
 }
@@ -948,7 +948,7 @@ header.is-active > div > div.burger-sticks {
 }
 
 /* 모바일 + 태블릿 800px 기준 */
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
 
   .pc-tag.hide {
     display: none;
@@ -969,9 +969,12 @@ header.is-active > div > div.burger-sticks {
   header .mw-header-wrap {
     display: flex;
     position: absolute;
-    width: calc(100% - 64px);
+    width: calc(100% - 32px);
     left: 0;
     margin: 24px 16px 0 16px;
+    padding: unset;
+    height: 56px;
+    border-radius: 16px;
   }
 
   header.is-active .mw-header-wrap {
@@ -1016,12 +1019,15 @@ header.is-active > div > div.burger-sticks {
   }
 
   header > div .logo-wrap img {
-    width: 62px;
-    height: 24px;
+    width: 56px;
   }
 
   main {
     margin-top: unset;
+  }
+
+  main img:hover {
+    border-radius: 40px !important;
   }
 
   main .main-body .padding-wrap {
@@ -1070,14 +1076,12 @@ header.is-active > div > div.burger-sticks {
 
   footer .text-wrap p.title {
     font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
   }
 
   footer .text-wrap > div > p + p {
     margin-top: 8px;
-  }
-
-  footer .text-wrap > div > p:nth-child(3) {
-    margin-top: 16px;
   }
 
   footer .text-wrap a > .title {
@@ -1089,22 +1093,28 @@ header.is-active > div > div.burger-sticks {
   }
 
   footer .text-wrap .company-wrap {
+    font-family: 'Noto Sans KR';
     font-size: 13px;
   }
 
   button {
-    width: 120px;
-    height: 42px;
     border-radius: 8px;
+    font-weight: 500;
+    padding: 12px 24px;
   }
 
   main .top-wrap .main-text-wrap {
-    font-size: 16px;
+    font-size: 20px;
     padding: 0 36px;
+    font-weight: 400;
   }
 
   main .top-wrap .main-text-wrap p + p {
     margin-top: 12px;
+  }
+
+  main .top-wrap .main-text-wrap .title {
+    font-weight: 500;
   }
 
   main .top-wrap .main-text-wrap .title,
@@ -1114,11 +1124,20 @@ header.is-active > div > div.burger-sticks {
 
   main .top-wrap .main-text-wrap .title,
   main .contents .title {
-    font-size: 26px;
+    font-size: 30px;
+    font-weight: 500;
   }
 
-  main .top-wrap .main-text-wrap .title + p {
+  footer .text-wrap > div > p:nth-child(3),
+  main .top-wrap .main-text-wrap .title + p,
+  main .product-wrap div.product-wrap-list p,
+  main .contents div p + p {
     margin-top: 16px;
+  }
+
+  main .product-wrap div.product-wrap-list {
+    width: 100%;
+    font-size: 20px;
   }
 
   main .top-wrap .main-text-wrap p + button {
@@ -1127,23 +1146,27 @@ header.is-active > div > div.burger-sticks {
     width: unset;
     height: unset;
     padding: 12px 24px;
+    font-weight: 500;
   }
 
   main .green-color-title {
     font-size: 16px;
+    font-weight: 500;
   }
 
   main .contents {
     font-size: 18px;
-    padding: 80px 24px 24px 24px;
+    padding: 80px 24px 40px 24px;
   }
 
   main .contents div .green-color-title + p {
+    font-size: 20px;
     line-height: 130%;
+    margin-top: 12px;
   }
 
   main .contents > div + div {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 
   main .contents .box-wrap {
@@ -1212,6 +1235,24 @@ header.is-active > div > div.burger-sticks {
 
   .sub-title {
     font-size: 20px;
+  }
+
+  main .product-wrap {
+    padding: 80px 16px;
+  }
+
+  main .product-wrap > div .sub-title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+
+  main .product-wrap > div > p + p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-top: 16px;
+    text-align: center;
   }
 
   .sub-title.lead-icon > span::before {
