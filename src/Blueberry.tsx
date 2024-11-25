@@ -47,7 +47,7 @@ const Blueberry = () => {
           <div className="table-wrap">
             <div className="table-header">단체</div>
             <div className="table-box">
-              <div>
+              <div className="pc-tag hide">
                 <div className="table-sub-title">
                   <p>대상</p>
                   <p>인원</p>
@@ -61,11 +61,23 @@ const Blueberry = () => {
                   <p>수확체험 15,000원, 수확 + 가공 체험 30,000원</p>
                 </div>
               </div>
+              <div className="mw-tag hide">
+                <div className="table-sub-title">
+                  <p>대상</p>
+                  <p className="table-sub-contents">어린이집, 유치원, 초등학교 1-2학년, 기업체 등</p>
+                  <p>인원</p>
+                  <p className="table-sub-contents">10~50명 단위</p>
+                  <p>시기</p>
+                  <p className="table-sub-contents">6월 초순 ~ 7월 하순(평일)</p>
+                  <p>비용</p>
+                  <p className="table-sub-contents">수확체험 15,000원, 수확<br/> + 가공 체험 30,000원</p>
+                </div>
+              </div>
             </div>
             <div className="table-header">가족 단위</div>
             <div className="table-box">
               <div>
-                <span>6월 초순 ~ 7월 하순(주말), 500g~1kg 수확(20,000~35,000원)</span>
+                <span>6월 초순 ~ 7월 하순(주말), 500g~1kg 수확<br className="mw-tag hide"/>(20,000~35,000원)</span>
               </div>
             </div>
           </div>
@@ -97,7 +109,7 @@ const Blueberry = () => {
         <div className="blueberry-seedlings-sale-wrap padding-wrap">
           <p className="sub-title lead-icon"><span />블루베리 묘목 분양</p>
           <ul className="sub-contents">
-            <li><p>농장에서 직접 생산한 블루베리 묘목을 분양합니다. (4월 초순 ~ 6월 초순)</p></li>
+            <li><p>농장에서 직접 생산한 블루베리 묘목을<br className="mw-tag hide"/> 분양합니다. (4월 초순 ~ 6월 초순)</p></li>
             <li><p>분양하는 묘목은 2~4년생이며, 3년생부터 꽃과 열매를 즐길 수 있으며, 가을철의 단풍은 무척 아름답습니다.</p></li>
             <li><p>묘목은 택배도 가능하지만 세종 · 대전 · 공주지역은 농장에 오셔서 직접 선택하는 것이 좋습니다.</p></li>
           </ul>

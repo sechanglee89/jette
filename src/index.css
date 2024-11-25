@@ -30,16 +30,24 @@ body {
   display: none;
 }
 
-.pc-tag {
+.pc-tag.hide {
   display: inherit;
+}
+
+.table-wrap .table-box > div.pc-tag.hide {
+  display: flex;
+}
+
+.mw-tag.hide {
+  display: none;
+}
+
+.table-wrap .table-box > div.mw-tag.hide {
+  display: none;
 }
 
 main.caring .main-body {
   padding: unset;
-}
-
-main.caring .mountain-wrap img.mw-tag.hide {
-  display: none;
 }
 
 .display-block {
@@ -131,6 +139,10 @@ header .text-wrap {
 header .text-wrap .header-link-wrap {
   display: flex;
   gap: 60px;
+}
+
+header .text-wrap .header-link-wrap a.active {
+  color: #73BE44;
 }
 
 /* footer */
@@ -955,8 +967,16 @@ header.is-active > div > div.burger-sticks {
     display: none;
   }
 
-  .mw-tag {
+  .table-wrap .table-box > div.pc-tag.hide {
+    display: none;
+  }
+
+  .mw-tag.hide {
     display: inherit;
+  }
+
+  .table-wrap .table-box > div.mw-tag.hide {
+    display: flex;
   }
   
   header {
@@ -1239,12 +1259,12 @@ header.is-active > div > div.burger-sticks {
   }
 
   .product-list-wrap img + p,
-  .sub-contents, .sub-sub-title {
+  .sub-sub-title {
     font-size: 16px;
   }
 
   .sub-title {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   main .product-wrap {
@@ -1272,8 +1292,14 @@ header.is-active > div > div.burger-sticks {
     height: 36px;
   }
 
+  .sub-title + .sub-contents {
+    margin-top: 24px;
+  }
+
   .sub-contents {
-    line-height: 160%;
+    font-family: 'Pretendard';
+    font-size: 20px;
+    line-height: 150%;
   }
 
   .sub-sub-title + .sub-contents {
@@ -1291,15 +1317,20 @@ header.is-active > div > div.burger-sticks {
     margin-top: 24px;
   }
 
-  img + .sub-title {
+  img + .sub-title,
+  .table-wrap .table-header {
     margin-top: 40px;
   }
 
   .table-wrap .table-header,
   .table-wrap .table-box > div > .table-sub-title {
-    font-size: 16px;
-    line-height: normal;
+    font-size: 20px;
     border-radius: 8px;
+  }
+
+  .table-wrap .table-box > div .table-sub-contents {
+    font-weight: 500;
+    margin-top: 4px;
   }
 
   .table-wrap .table-header .table-icon {
@@ -1335,6 +1366,11 @@ header.is-active > div > div.burger-sticks {
     border-radius: 8px;
   }
 
+  .table-wrap .table-box > div {
+    padding: 24px;
+    font-size: 20px;
+  }
+
   .normal-wrap {
     flex-direction: column;
     gap: 16px;
@@ -1357,7 +1393,7 @@ header.is-active > div > div.burger-sticks {
     display: block;
     margin-top: 12px;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .blueberry-seedlings-sale-wrap .normal-wrap {
@@ -1500,5 +1536,24 @@ header.is-active > div > div.burger-sticks {
   .blueberry-experience-wrap .masonry-wrap > div:nth-child(1) > img,
   .blueberry-experience-wrap .masonry-wrap > div:nth-child(5) > img {
     height: unset;
+  }
+
+  .table-wrap .table-box > div ul.custom-circle-list {
+    list-style-type: none;
+    list-style-image: none;
+    padding-left: 0;
+  }
+
+  .table-wrap .table-box > div ul.custom-circle-list li {
+    margin-left: 15px;
+  }
+
+  .table-wrap .table-box > div ul.custom-circle-list li:before {
+    top: 12px;
+    transform: none;
+  }
+
+  .table-wrap .table-box > div ul.custom-circle-list li::marker {
+    content: none;
   }
 }

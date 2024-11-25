@@ -39,7 +39,7 @@ const Caring = () => {
           <div className="table-wrap">
             <div className="table-header">행복 농장 프로그램</div>
             <div className="table-box">
-              <div>
+              <div className="pc-tag hide">
                 <div className="table-sub-title">
                   <p>참여자</p>
                   <p>시기</p>
@@ -47,7 +47,7 @@ const Caring = () => {
                   <p>주요 활동 내용</p>
                 </div>
                 <div>
-                    <p>발잘 장애인 및 가족</p>
+                    <p>발달 장애인 및 가족</p>
                     <p>4월 ~ 11월</p>
                     <p>월 2회</p>
                     <p>
@@ -57,6 +57,24 @@ const Caring = () => {
                         <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
                       </ul>
                     </p>
+                </div>
+              </div>
+              <div className="mw-tag hide">
+                <div className="table-sub-title">
+                  <p>참여자</p>
+                  <p className="table-sub-contents">발달 장애인 및 가족</p>
+                  <p>시기</p>
+                  <p className="table-sub-contents">4월 ~ 11월</p>
+                  <p>횟수</p>
+                  <p className="table-sub-contents">월 2회</p>
+                  <p>주요 활동 내용</p>
+                  <p className="table-sub-contents">
+                    <ul className="custom-circle-list">
+                      <li>건강체조, 황톳길 산책</li>
+                      <li>블루베리 재배 및 수확 · 가공 체험</li>
+                      <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                    </ul>
+                  </p>
                 </div>
               </div>
             </div>
@@ -72,7 +90,7 @@ const Caring = () => {
           <div className="table-wrap">
             <div className="table-header">기쁨 농장 프로그램</div>
             <div className="table-box">
-              <div>
+              <div className="pc-tag hide">
                 <div className="table-sub-title">
                   <p>참여자</p>
                   <p>시기</p>
@@ -80,7 +98,7 @@ const Caring = () => {
                   <p>주요 활동 내용</p>
                 </div>
                 <div>
-                    <p>발잘 장애인 및 가족</p>
+                    <p>발달 장애인 및 가족</p>
                     <p>4월 ~ 11월</p>
                     <p>월 2회</p>
                     <p>
@@ -90,6 +108,24 @@ const Caring = () => {
                         <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
                       </ul>
                     </p>
+                </div>
+              </div>
+              <div className="mw-tag hide">
+                <div className="table-sub-title">
+                  <p>참여자</p>
+                  <p className="table-sub-contents">발달 장애인 및 가족</p>
+                  <p>시기</p>
+                  <p className="table-sub-contents">4월 ~ 11월</p>
+                  <p>횟수</p>
+                  <p className="table-sub-contents">월 2회</p>
+                  <p>주요 활동 내용</p>
+                  <p className="table-sub-contents">
+                    <ul className="custom-circle-list">
+                      <li>건강체조, 황톳길 산책</li>
+                      <li>블루베리 재배 및 수확 · 가공 체험</li>
+                      <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                    </ul>
+                  </p>
                 </div>
               </div>
             </div>
@@ -116,7 +152,7 @@ const Caring = () => {
             <div className="table-wrap">
               <div className="table-header">건강 농장 프로그램</div>
               <div className="table-box">
-                <div>
+                <div className="pc-tag hide">
                   <div className="table-sub-title">
                     <p>참여자</p>
                     <p>시기</p>
@@ -134,6 +170,24 @@ const Caring = () => {
                           <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
                         </ul>
                       </p>
+                  </div>
+                </div>
+                <div className="mw-tag hide">
+                  <div className="table-sub-title">
+                    <p>참여자</p>
+                    <p className="table-sub-contents">독거노인 5명</p>
+                    <p>시기</p>
+                    <p className="table-sub-contents">4월 ~ 11월</p>
+                    <p>횟수</p>
+                    <p className="table-sub-contents">월 2회</p>
+                    <p>주요 활동 내용</p>
+                    <p className="table-sub-contents">
+                      <ul className="custom-circle-list">
+                        <li>건강체조, 황톳길 산책</li>
+                        <li>블루베리 재배 및 수확 · 가공 체험</li>
+                        <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                      </ul>
+                    </p>
                   </div>
                 </div>
               </div>
