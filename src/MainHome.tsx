@@ -47,13 +47,13 @@ const Main = () => {
             <p>탐스러운 블루베리와<br className="mw-tag hide" /> 행복한 미소가 만나는 그 순간을<br className="mw-tag hide" /> 아이들에게 선물하세요.</p>
           </div>
           <div className="box-wrap">
-            <div className="blueberry-wrap">
+            <div onClick={goBlueberryPage} className="blueberry-wrap">
               <p className="title">블루베리 농장</p>
-              <p><button onClick={goBlueberryPage}>자세히 보기</button></p>
+              <p><button>자세히 보기</button></p>
             </div>
-            <div className="caring-wrap">
+            <div onClick={goCaringPage} className="caring-wrap">
               <p className="title">농촌 돌봄 농장</p>
-              <p><button onClick={goCaringPage}>자세히 보기</button></p>
+              <p><button>자세히 보기</button></p>
             </div>
           </div>
         </div>

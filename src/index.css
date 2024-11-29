@@ -265,7 +265,7 @@ main .contents > div + div {
 main .top-wrap {
   display: flex;
   justify-content: center;
-  background-image: url("./images/mainBanner/main_banner.jpg");
+  background-image: url("./images/mainBanner/main_banner.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -301,11 +301,12 @@ img + .sub-padding-wrap {
 }
 
 main.blueberry .top-wrap {
-  background-image: url("./images/mainBanner/blueberry_banner.jpg");
+  background-image: url("./images/mainBanner/blueberry_banner.webp");
 }
 
 main.caring .top-wrap {
-  background-image: url("./images/mainBanner/caring_banner.png");
+  background-image: url("./images/mainBanner/caring_banner.webp");
+  background-position-y: -472px;
 }
 
 main.shop .top-wrap {
@@ -348,12 +349,14 @@ main .about-wrap .blueberry-wrap {
   background-image: url("./images/blueberry.jpg");
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 main .about-wrap .caring-wrap {
   background-image: url("./images/caring.jpg");
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 main .about-wrap .green-color-title + p {
@@ -617,6 +620,10 @@ img + .sub-title {
   line-height: 150%;
 }
 
+.table-wrap .table-header + .table-box {
+  margin-top: 24px;
+}
+
 .table-wrap .table-header .table-icon {
   display: flex;
   padding: 0px 16px;
@@ -851,6 +858,10 @@ main.caring .masonry-wrap > div:last-child > img {
   text-align: left;
 }
 
+.caring-farm-top-wrap .main-image {
+  height: 700px;
+}
+
 .caring-farm-top-wrap .masonry-wrap > div:nth-child(2),
 .caring-farm-top-wrap .masonry-wrap > div:last-child {
   margin-bottom: unset;
@@ -976,6 +987,10 @@ header.is-active > div > div.burger-sticks {
 /* 모바일 + 태블릿 800px 기준 */
 @media (max-width: 1080px) {
 
+  main.caring .top-wrap {
+    background-position-y: unset;
+  }
+
   .pc-tag.hide {
     display: none;
   }
@@ -988,7 +1003,7 @@ header.is-active > div > div.burger-sticks {
     display: inherit;
   }
 
-  strong.mw-tag.hide {
+  strong {
     display: inline;
     font-weight: bold;
   }
@@ -1574,6 +1589,10 @@ header.is-active > div > div.burger-sticks {
 
   main.caring .main-body .caring-farm-bottom-wrap.padding-wrap {
     padding-bottom: 80px;
+  }
+
+  .caring-farm-top-wrap .main-image {
+    height: auto;
   }
 
   .caring-farm-top-wrap .sub-sub-title,

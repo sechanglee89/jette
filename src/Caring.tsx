@@ -1,4 +1,4 @@
-import caringMainImg from './images/caring/caringMain.png';
+import caringMainImg from './images/caring/caringMain.webp';
 import caring01Img from './images/caring/caring_01.jpg';
 import caring02Img from './images/caring/caring_02.jpg';
 import caring03Img from './images/caring/caring_03.jpg';
@@ -37,7 +37,7 @@ const Caring = () => {
             </p>
             <div className="notice-wrap"><p className="notice-title">※ 재료비, 식비 등 모든 비용 무료 제공</p></div>
           </div>
-          <img alt="돌봄 농장 메인" src={caringMainImg}></img>
+          <img className="main-image" alt="돌봄 농장 메인" src={caringMainImg}></img>
           <div className="table-wrap">
             <div className="table-header">행복 농장 프로그램</div>
             <div className="table-box">

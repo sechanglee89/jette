@@ -114,8 +114,8 @@ const Blueberry = () => {
           <div className="sub-padding-wrap">
             <p className="sub-title lead-icon"><span />블루베리 묘목 분양</p>
             <ul className="sub-contents">
-              <li><p><strong className="mw-tag hide">농장에서 직접 생산한 블루베리 묘목</strong>을<br className="mw-tag hide"/> 분양합니다. (4월 초순 ~ 6월 초순)</p></li>
-              <li><p><strong className="mw-tag hide">분양하는 묘목은 2~4년생</strong>이며, 3년생부터 꽃과 열매를 즐길 수 있으며, 가을철의 단풍은 무척 아름답습니다.</p></li>
+              <li><p><strong>농장에서 직접 생산한 블루베리 묘목</strong>을<br className="mw-tag hide"/> 분양합니다. (4월 초순 ~ 6월 초순)</p></li>
+              <li><p><strong>분양하는 묘목은 2~4년생</strong>이며, 3년생부터 꽃과 열매를 즐길 수 있으며, 가을철의 단풍은 무척 아름답습니다.</p></li>
               <li><p>묘목은 택배도 가능하지만 세종 · 대전 · 공주지역은 농장에 오셔서 직접 선택하는 것이 좋습니다.</p></li>
             </ul>
           </div>
