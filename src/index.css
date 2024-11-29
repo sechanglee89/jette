@@ -707,6 +707,11 @@ img + .sub-title {
 
 .table-wrap .table-box > div ul {
   padding-left: 12px;
+  margin-top: 12px;
+}
+
+.table-wrap .table-box > div ul.custom-circle-list {
+  color: #222;
 }
 
 .table-wrap .table-box > div ul.custom-circle-list li {
@@ -1415,6 +1420,10 @@ header.is-active > div > div.burger-sticks {
     font-size: 20px;
   }
 
+  .table-wrap .table-box > div ul {
+    margin-top: 4px;
+  }
+
   .normal-wrap {
     flex-direction: column;
     gap: 16px;
@@ -1633,6 +1642,7 @@ header.is-active > div > div.burger-sticks {
     list-style-type: none;
     list-style-image: none;
     padding-left: 0;
+    line-height: 150%;
   }
 
   .table-wrap .table-box > div ul.custom-circle-list li {

@@ -14,6 +14,12 @@ const Header = () => {
       setisOn(!isOn)
     };
 
+    const handleLinkClick = () => {
+      // 클릭 시 동작 수행 (예: 로그 찍기)
+      console.log('Link clicked!');
+    };
+  
+
     return (
       <>
         <header className={`${isOn ? "is-active" : ""}`}>
@@ -40,9 +46,9 @@ const Header = () => {
             </div>
             <div className="text-wrap hide">
                 <div className="header-link-wrap">
-                  <NavLink to='/blueberry' className={({ isActive }) => (isActive ? "active" : "")}>블루베리 농장</NavLink>
-                  <NavLink to='/caring' className={({ isActive }) => (isActive ? "active" : "")}>농촌 돌봄 농장</NavLink>
-                  <NavLink to='/shop' className={({ isActive }) => (isActive ? "active" : "")}>제때 쇼핑몰</NavLink>
+                  <NavLink to='/blueberry' onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>블루베리 농장</NavLink>
+                  <NavLink to='/caring' onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>농촌 돌봄 농장</NavLink>
+                  <NavLink to='/shop' onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>제때 쇼핑몰</NavLink>
                 </div>
             </div>
           </div>

@@ -52,13 +52,11 @@ const Caring = () => {
                     <p>발달 장애인 및 가족</p>
                     <p>4월 ~ 11월</p>
                     <p>월 2회</p>
-                    <p>
-                      <ul className="custom-circle-list">
-                        <li>건강체조, 황톳길 산책</li>
-                        <li>블루베리 재배 및 수확 · 가공 체험</li>
-                        <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
-                      </ul>
-                    </p>
+                    <ul className="custom-circle-list">
+                      <li>건강체조, 황톳길 산책</li>
+                      <li>블루베리 재배 및 수확 · 가공 체험</li>
+                      <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                    </ul>
                 </div>
               </div>
               <div className="mw-tag hide">
@@ -70,13 +68,11 @@ const Caring = () => {
                   <p>횟수</p>
                   <p className="table-sub-contents">월 2회</p>
                   <p>주요 활동 내용</p>
-                  <p className="table-sub-contents">
-                    <ul className="custom-circle-list">
-                      <li>건강체조, 황톳길 산책</li>
-                      <li>블루베리 재배 및 수확 · 가공 체험</li>
-                      <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
-                    </ul>
-                  </p>
+                  <ul className="custom-circle-list">
+                    <li>건강체조, 황톳길 산책</li>
+                    <li>블루베리 재배 및 수확 · 가공 체험</li>
+                    <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -103,13 +99,11 @@ const Caring = () => {
                     <p>발달 장애인 및 가족</p>
                     <p>4월 ~ 11월</p>
                     <p>월 2회</p>
-                    <p>
-                      <ul className="custom-circle-list">
-                        <li>건강체조, 황톳길 산책</li>
-                        <li>블루베리 재배 및 수확 · 가공 체험</li>
-                        <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
-                      </ul>
-                    </p>
+                    <ul className="custom-circle-list">
+                      <li>건강체조, 황톳길 산책</li>
+                      <li>블루베리 재배 및 수확 · 가공 체험</li>
+                      <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                    </ul>
                 </div>
               </div>
               <div className="mw-tag hide">
@@ -121,13 +115,11 @@ const Caring = () => {
                   <p>횟수</p>
                   <p className="table-sub-contents">월 2회</p>
                   <p>주요 활동 내용</p>
-                  <p className="table-sub-contents">
-                    <ul className="custom-circle-list">
-                      <li>건강체조, 황톳길 산책</li>
-                      <li>블루베리 재배 및 수확 · 가공 체험</li>
-                      <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
-                    </ul>
-                  </p>
+                  <ul className="custom-circle-list">
+                    <li>건강체조, 황톳길 산책</li>
+                    <li>블루베리 재배 및 수확 · 가공 체험</li>
+                    <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -167,13 +159,11 @@ const Caring = () => {
                       <p>독거노인 5명</p>
                       <p>4월 ~ 11월</p>
                       <p>월 2회</p>
-                      <p>
-                        <ul className="custom-circle-list">
-                          <li>건강체조, 황톳길 산책</li>
-                          <li>블루베리 재배 및 수확 · 가공 체험</li>
-                          <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
-                        </ul>
-                      </p>
+                      <ul className="custom-circle-list">
+                        <li>건강체조, 황톳길 산책</li>
+                        <li>블루베리 재배 및 수확 · 가공 체험</li>
+                        <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                      </ul>
                   </div>
                 </div>
                 <div className="mw-tag hide">
@@ -185,13 +175,11 @@ const Caring = () => {
                     <p>횟수</p>
                     <p className="table-sub-contents">월 2회</p>
                     <p>주요 활동 내용</p>
-                    <p className="table-sub-contents">
-                      <ul className="custom-circle-list">
-                        <li>건강체조, 황톳길 산책</li>
-                        <li>블루베리 재배 및 수확 · 가공 체험</li>
-                        <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
-                      </ul>
-                    </p>
+                    <ul className="custom-circle-list">
+                      <li>건강체조, 황톳길 산책</li>
+                      <li>블루베리 재배 및 수확 · 가공 체험</li>
+                      <li>텃밭 채소 재배, 아로니아/다래 수확 체험</li>
+                    </ul>
                   </div>
                 </div>
               </div>
