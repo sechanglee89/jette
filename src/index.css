@@ -292,6 +292,14 @@ main .main-body .padding-wrap {
   padding: 100px 14%;
 }
 
+.sub-padding-wrap + img {
+  margin-top: 40px;
+}
+
+img + .sub-padding-wrap {
+  margin-top: 80px;
+}
+
 main.blueberry .top-wrap {
   background-image: url("./images/mainBanner/blueberry_banner.jpg");
 }
@@ -540,8 +548,18 @@ ul.pagination li a:hover, ul.pagination li a.active {
   margin-top: 40px;
 }
 
-.sub-title.lead-icon + .sub-contents li::marker {
+.sub-title.lead-icon + .sub-contents li {
+  position: relative;
+}
+
+.sub-title.lead-icon + .sub-contents li::before {
   content: "-";
+  position: absolute;
+  top: -4px;
+}
+
+.sub-title.lead-icon + .sub-contents li > p {
+  padding-left: 16px;
 }
 
 .table-wrap .table-box .table-sub-contents li {
@@ -549,7 +567,6 @@ ul.pagination li a:hover, ul.pagination li a.active {
   margin-left: 24px;
 }
 
-.sub-title.lead-icon + .sub-contents li > p,
 .table-wrap .table-box .table-sub-contents li > p {
   padding-left: 10px;
 }
@@ -615,10 +632,6 @@ img + .sub-title {
   font-size: 20px;
   font-weight: 600;
   line-height: 150%; /* 30px */
-}
-
-.table-wrap .table-box {
-  margin-top: 24px;
 }
 
 .table-wrap .table-box > div {
@@ -781,7 +794,7 @@ main.caring .masonry-wrap > div:last-child > img {
 
 /* 블루베리 농장 */
 .normal-wrap.half-and-half + p,
-.blueberry-seedlings-sale-wrap > div p {
+.blueberry-seedlings-sale-wrap > div img + p {
   text-align: center;
 }
 
@@ -790,7 +803,7 @@ main.caring .masonry-wrap > div:last-child > img {
 }
 
 .blueberry-experience-wrap > div p,
-.blueberry-seedlings-sale-wrap > div p,
+.blueberry-seedlings-sale-wrap > div img + p,
 .masonry-wrap p {
   color: #92A992;
   font-size: 24px;
@@ -893,7 +906,7 @@ main.caring .masonry-wrap > div:last-child > img {
 .left-title-wrap div > span {
   font-size: 3rem;
   color: #72BE44;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 150%; /* 36px */
   min-width: 180px;
 }
@@ -973,6 +986,11 @@ header.is-active > div > div.burger-sticks {
 
   .mw-tag.hide {
     display: inherit;
+  }
+
+  strong.mw-tag.hide {
+    display: inline;
+    font-weight: bold;
   }
 
   .table-wrap .table-box > div.mw-tag.hide {
@@ -1057,6 +1075,23 @@ header.is-active > div > div.burger-sticks {
 
   main .main-body .blueberry-seedlings-sale-wrap.padding-wrap {
     padding-bottom: 80px;
+  }
+
+  main.blueberry .main-body .padding-wrap,
+  main.caring .main-body .padding-wrap {
+    padding: 40px 16px;
+  }
+
+  .sub-padding-wrap {
+    padding: 0 8px;
+  }
+
+  .sub-padding-wrap + img {
+    margin-top: 24px;
+  }
+
+  img + .sub-padding-wrap {
+    margin-top: 40px;
   }
 
   footer > div {
@@ -1360,12 +1395,6 @@ header.is-active > div > div.burger-sticks {
     font-size: 16px;
   }
 
-  main.blueberry .main-body img, 
-  main.caring .main-body img,
-  .table-wrap .table-box > div {
-    border-radius: 8px;
-  }
-
   .table-wrap .table-box > div {
     padding: 24px;
     font-size: 20px;
@@ -1474,6 +1503,11 @@ header.is-active > div > div.burger-sticks {
     margin-top: 24px;
   }
 
+  main.blueberry .main-body .blueberry-farm-wrap > img,
+  main.caring .main-body .caring-farm-top-wrap > img {
+    border-radius: 8px;
+  }
+
   .caring-farm-top-wrap .notice-wrap {
     margin-top: 8px;
   }
@@ -1485,10 +1519,6 @@ header.is-active > div > div.burger-sticks {
 
   .table-wrap .table-box.four-box {
     gap: 16px;
-  }
-
-  .caring .caring-farm-bottom-wrap .table-wrap {
-    padding: 40px 16px 0 16px;
   }
 
   .left-title-wrap > div {
@@ -1538,6 +1568,48 @@ header.is-active > div > div.burger-sticks {
     height: unset;
   }
 
+  .caring div.farming-introduction-wrap {
+    margin-top: 80px;
+  }
+
+  main.caring .main-body .caring-farm-bottom-wrap.padding-wrap {
+    padding-bottom: 80px;
+  }
+
+  .caring-farm-top-wrap .sub-sub-title,
+  .caring-farm-middle-wrap .sub-sub-title {
+    font-size: 20px;
+  }
+
+  .caring-farm-top-wrap .masonry-wrap > div:nth-child(2), 
+  .caring-farm-top-wrap .masonry-wrap > div:last-child {
+    margin-bottom: 16px;
+  }
+
+  .caring .caring-farm-bottom-wrap .table-wrap .table-box > div {
+    align-items: unset;
+    flex-direction: column;
+    gap: 4px;
+    line-height: 150%;
+  }
+
+  .caring .caring-farm-bottom-wrap .table-wrap .table-box > div .custom-import-text {
+    position: unset;
+    padding-left: unset;
+    word-break: break-all;
+  }
+  
+  .caring .caring-farm-bottom-wrap .table-wrap .table-box > div .custom-import-text::before {
+    content: unset; /* 비어 있는 내용 */
+    position: unset;
+    left: unset;
+    width: unset;
+  }
+
+  .masonry-wrap > div:last-child {
+    margin-bottom: unset !important;
+  }
+
   .table-wrap .table-box > div ul.custom-circle-list {
     list-style-type: none;
     list-style-image: none;
@@ -1555,5 +1627,40 @@ header.is-active > div > div.burger-sticks {
 
   .table-wrap .table-box > div ul.custom-circle-list li::marker {
     content: none;
+  }
+
+  .masonry-wrap > div > img,
+  .normal-wrap > div > img {
+    aspect-ratio: 1;
+    height: auto !important;
+  }
+
+  .sub-title.lead-icon + .sub-contents li::before {
+    top: -1px;
+  }
+  
+  .sub-title.lead-icon + .sub-contents li > p {
+    padding-left: 12px;
+  }
+
+  .left-title-wrap > div > div {
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  .left-title-wrap > div > div + div {
+    margin-top: 24px;
+  }
+
+  .left-title-wrap div > span {
+    font-size: 20px;
+  }
+
+  .left-title-wrap div > span + span {
+    margin-top: 8px;
+  }
+
+  .left-title-wrap div .add-text-wrap {
+    font-size: 16px;
   }
 }
