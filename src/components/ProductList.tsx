@@ -37,7 +37,7 @@ const ProductList = (props: ProductListProps) => {
 			try {
 				const res = await axios.get(URL, {
 					params: {
-						query: "제때&mall=11380200595",
+						query: "제때팜 식품",
 						display: props.limit,
 						start: (currentPage - 1) * props.limit + 1, // 시작 페이지 계산
 						sort: "date"
