@@ -1,6 +1,7 @@
 import ProductList from './components/ProductList';
 import { useNavigate } from 'react-router-dom';
 import Meta from './components/Meta';
+import { useEffect } from 'react';
 
 const Main = () => {
   const ProductListProps = {
@@ -29,6 +30,14 @@ const Main = () => {
     _event.preventDefault();
     navigate("/shop");
   };
+
+  useEffect(() => {
+    const redirectPath = sessionStorage.getItem('redirectPath');
+    if (redirectPath) {
+      sessionStorage.removeItem('redirectPath');
+      navigate(redirectPath);  // 실제로 라우터가 처리하게 함
+    }
+  }, []);
 
   return (
     <>
