@@ -21,7 +21,7 @@ const Meta = ({ title, description, url = window.location.href, image }: MetaPro
     if (image) {
       setMetaTag('property', 'og:image', image);
     } else {
-      setMetaTag('property', 'og:image', "/static/media/logo.2ee42c9195554c239024b933240dd3df.svg");
+      setMetaTag('property', 'og:image', "https://xn--o11bt07a.com/static/media/logo.2ee42c9195554c239024b933240dd3df.svg");
     }
 
     function setMetaTag(attr: 'name' | 'property', key: string, content: string) {
