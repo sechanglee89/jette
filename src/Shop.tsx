@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import ProductList from './components/ProductList';
+import Meta from './components/Meta';
 
 const handleClick = (_event: any) => {
   window.open("https://smartstore.naver.com/cct7007");
@@ -27,24 +28,27 @@ const Shop = () => {
   };
 
   return (
-    <main className="shop">
-      <div className="top-wrap">
-        <div className="main-text-wrap">
-          <div>
-            <p className="green-color-title">Product</p>
-            <p className="title">제때 쇼핑몰</p>
-            <p>
-              신선하고 건강한 먹거리를 제공하여<br className="mw-tag hide" /> 지역 주민의 건강과<br />
-              지역 경제 활성화에 기여합니다.
-            </p>
-            <button onClick={handleClick}>쇼핑몰 바로가기</button>
+    <>
+    <Meta title="제때 쇼핑몰" description="신선한 제때 제품을 만나볼 수 있는 공식 쇼핑몰." />
+      <main className="shop">
+        <div className="top-wrap">
+          <div className="main-text-wrap">
+            <div>
+              <p className="green-color-title">Product</p>
+              <p className="title">제때 쇼핑몰</p>
+              <p>
+                신선하고 건강한 먹거리를 제공하여<br className="mw-tag hide" /> 지역 주민의 건강과<br />
+                지역 경제 활성화에 기여합니다.
+              </p>
+              <button onClick={handleClick}>쇼핑몰 바로가기</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="main-body">
-        <ProductList {...ProductListProps}/>
-      </div>
-    </main>
+        <div className="main-body">
+          <ProductList {...ProductListProps}/>
+        </div>
+      </main>
+    </>
   )
 }
 
