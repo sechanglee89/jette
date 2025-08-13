@@ -41,7 +41,7 @@ const Main = () => {
 
   return (
     <>
-      <Meta title="제때 | 자연의 소중함을 느낄 수 있는 순간" description="자연의 축복이 담긴 건강한 먹거리를 제공하는 제때입니다." />
+      <Meta title="제때 | 자연의 소중함을 느낄 수 있는 순간" description="제때블루베리, 제때사회적농장, 제때농촌돌봄농장, 제때팜 제때 따서 제때 담은 제철과일 농원" />
         <main className="home">
         <div className="top-wrap">
           <div className="main-text-wrap">
