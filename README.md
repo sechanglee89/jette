@@ -1,4 +1,4 @@
-# 제때 (Jette)
+﻿# 제때 (Jette)
 
 자연의 소중함을 느낄 수 있는 순간  제때 농장 공식 웹사이트입니다.  
 블루베리 농장 체험, 농촌 돌봄 농장 프로그램, 제때 쇼핑몰 정보를 제공합니다.
@@ -18,11 +18,12 @@
 - ts-node-dev
 
 **배포**
-- GitHub Pages (\gh-pages\)
+- GitHub Pages (`gh-pages`)
 
 ## 프로젝트 구조
 
-\jette/
+```
+jette/
  src/
     App.tsx              # 루트 컴포넌트
     MainHome.tsx         # 메인 홈 페이지
@@ -39,47 +40,52 @@
  server/
      src/
          App.ts           # Express 프록시 서버 (포트 5000)
-\
+```
+
 ## 페이지 라우팅
 
 | 경로 | 페이지 |
 |------|--------|
-| \/\ | 메인 홈 |
-| \/blueberry\ | 블루베리 농장 |
-| \/caring\ | 농촌 돌봄 농장 |
-| \/shop\ | 제때 쇼핑몰 |
+| `/` | 메인 홈 |
+| `/blueberry` | 블루베리 농장 |
+| `/caring` | 농촌 돌봄 농장 |
+| `/shop` | 제때 쇼핑몰 |
 
 ## 시작하기
 
 ### 패키지 설치
 
-\\ash
+```bash
 # 클라이언트
 npm install
 
 # 서버
 cd server && npm install
-\
+```
+
 ### 개발 서버 실행
 
 **클라이언트만 실행** (포트 3000)
-\\ash
+```bash
 npm start
-\
+```
+
 **클라이언트 + 서버 동시 실행** (포트 3000 + 5000)
-\\ash
+```bash
 npm run start2
-\
+```
+
 백엔드 서버만 실행할 경우:
-\\ash
+```bash
 cd server && npm run dev
-\
+```
+
 ## 빌드 및 배포
 
-\\ash
+```bash
 # 프로덕션 빌드
 npm run build
 
 # GitHub Pages 배포 (빌드 + CNAME 복사 + 배포 자동 수행)
 npm run deploy
-\
+```
