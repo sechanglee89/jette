@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# 제때 (Jette)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+자연의 소중함을 느낄 수 있는 순간  제때 농장 공식 웹사이트입니다.  
+블루베리 농장 체험, 농촌 돌봄 농장 프로그램, 제때 쇼핑몰 정보를 제공합니다.
 
-## Available Scripts
+## 기술 스택
 
-In the project directory, you can run:
+**Frontend**
+- React 18 + TypeScript
+- React Router v6
+- Swiper (메인 배너 슬라이더)
+- react-js-pagination
+- Axios
 
-### `npm start`
+**Backend**
+- Node.js + Express + TypeScript
+- Naver Shopping Open API 프록시 서버
+- ts-node-dev
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**배포**
+- GitHub Pages (\gh-pages\)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 프로젝트 구조
 
-### `npm test`
+\jette/
+ src/
+    App.tsx              # 루트 컴포넌트
+    MainHome.tsx         # 메인 홈 페이지
+    Blueberry.tsx        # 블루베리 농장 페이지
+    Caring.tsx           # 농촌 돌봄 농장 페이지
+    Shop.tsx             # 쇼핑몰 페이지
+    components/
+        Layout.tsx       # 라우터 및 레이아웃
+        Header.tsx
+        Footer.tsx
+        ProductList.tsx  # 네이버 쇼핑 상품 목록
+        Meta.tsx         # SEO 메타 태그
+        ScrollToTop.tsx
+ server/
+     src/
+         App.ts           # Express 프록시 서버 (포트 5000)
+\
+## 페이지 라우팅
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| 경로 | 페이지 |
+|------|--------|
+| \/\ | 메인 홈 |
+| \/blueberry\ | 블루베리 농장 |
+| \/caring\ | 농촌 돌봄 농장 |
+| \/shop\ | 제때 쇼핑몰 |
 
-### `npm run build`
+## 시작하기
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 패키지 설치
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+\\ash
+# 클라이언트
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 서버
+cd server && npm install
+\
+### 개발 서버 실행
 
-### `npm run eject`
+**클라이언트만 실행** (포트 3000)
+\\ash
+npm start
+\
+**클라이언트 + 서버 동시 실행** (포트 3000 + 5000)
+\\ash
+npm run start2
+\
+백엔드 서버만 실행할 경우:
+\\ash
+cd server && npm run dev
+\
+## 빌드 및 배포
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+\\ash
+# 프로덕션 빌드
+npm run build
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# GitHub Pages 배포 (빌드 + CNAME 복사 + 배포 자동 수행)
+npm run deploy
+\
